@@ -65,7 +65,7 @@
         </div>
     </header>
 
-    <header class="header">
+    <header class="header wraper">
         <div class="header__menu">
             <div class="header__menu_item">
                 <ul>
@@ -119,44 +119,94 @@
         </div>
         <h1>Аналитика</h1>
     </header>
-    <main class="main">
+    <div class="menu wraper">
+        <ul>
+            <li>
+                <button class="button button-1 active">Месторождения</button>
+            </li>
+            <li>
+                <button class="button button-2">Лицензии</button>
+            </li>
+            <li>
+                <button class="button button-3">Бизнес</button>
+            </li>
+        </ul>
+    </div>
+    <main class="main wraper">
         <nav class="nav">
             <ul>
                 <li>
-                    <a href="pages/analitics1.html">Финансирование</a>
+                    <a href="pages/analitics1.html">Золото</a>
                 </li>
                 <li>
-                    <a href="pages/analitics2.html">Объем</a>
+                    <a href="pages/analitics2.html">Серебро</a>
                 </li>
                 <li>
-                    <a href="#">Аналитика</a>
+                    <a href="#">Нефть и конденсат</a>
                 </li>
                 <li>
-                    <a href="#">Аналитика</a>
+                    <a href="#">Железные руды</a>
                 </li>
                 <li>
-                    <a href="#">Аналитика</a>
+                    <a href="#">Медь</a>
                 </li>
             </ul>
         </nav>
-        <!-- <div class="main__menu"></div> -->
         <section class="content">
             <div class="row">
-                <!-- <div class="row__container">
-                    <div class="row__container_item">
-                        <p class="text">Финансирование ГРР в России</p>
-                        <div id="chartdiv"></div>
+                <h2>Популярная статистика</h2>
+                <div class="row__container1">
+                    <div class="row__container1_item1">
+                        <h3>Количество месторождений</h3>
+                        <p class="main-value">5894</p>
+                        <p class="bottom-value"></p>
                     </div>
-                    <div class="row__container_item">
-                        <p class="text">Объемы добычи и прироста золота</p>
-                        <div id="chartdiv1"></div>
-                    </div> -->
-            </div>
+                    <div class="row__container1_item1">
+                        <h3>Запасы золота</h3>
+                        <p class="main-value">13817,4</p>
+                        <p class="bottom-value">A+B+C
+                            <sub>1</sub>+C
+                            <sub>2</sub>
+                        </p>
+                    </div>
+                    <div class="row__container1_item1">
+                        <h3>Добыча золота</h3>
+                        <p class="main-value">286,6</p>
+                        <p class="bottom-value">тонн</p>
+                    </div>
+                    <div class="row__container1_item1">
+                        <h3>Средняя цена за золото</h3>
+                    </div>
+                </div>
+                <h2>Статистика запасов</h2>
+                <div class="row__container2">
+                    <div class="row__container2_item2">
+                        <h3>Динамика запасов золота категорий А+В+С
+                            <sub>1</sub> в коренных и россыпных месторождениях в 2006–2015 гг., %</h3>
+                        <img src="image/au_chart-1.png" alt="Динамика запасов золота категорий А+В+С.">
+                    </div>
+                    <div class="row__container2_item2">
+                        <h3>Динамика добычи золота и прироста его запасов категорий А+В+С
+                            <sub>1</sub>
+                            в результате геологоразведочных работ в 2006-2015 гг., тонн</h3>
+                        <img src="image/au_chart-2.png" alt="Динамика добычи золота и прироста его запасов категорий А+В+С">
+                    </div>
+                    <div class="row__container2_item2">
+                        <h3>Распределение запасов золота и его прогнозных ресурсов категории Р
+                            <sub>1</sub>
+                            по субъектам Российской Федерации, тонн</h3>
+                        <img src="image/au_chart-3.png" alt="Распределение запасов золота и его прогнозных ресурсов">
+                    </div>
+                    <div class="row__container2_item2">
+                        <h3>Динамика движения запасов золота в 2006–2015 гг., тонн</h3>
+                        <img src="image/au_chart-4.png" alt="Динамика движения запасов золота в 2006–2015 гг">
+                    </div>
+                </div>
             </div>
         </section>
     </main>
 
-    <footer class="footer">
+    <footer class="footer wraper">
         <div class="footer__item">
             <div class="footer__item_column">
                 <ul class="footer__item_column-1">
