@@ -49,13 +49,12 @@ h2 {
   color: grey;
 }
 h4 {
-  color: #fff;
+  color: #f0003e;
   margin: 0;
   position: absolute;
-  top: 87%;
-  left: 17%;
+  top: 16%;
+  left: 23%;
   font-size: 20px;
-  text-shadow: 3px 6px 16px #000000;
 }
 .header {
   background: url(image/main_img_analitics4.jpg) no-repeat;
