@@ -185,29 +185,38 @@
                 <div class="row__container2">
                     <div class="row__container2_item2">
                         <h3>Динамика запасов золота категорий А+В+С
-                            <sub>1</sub> в коренных и россыпных месторождениях в 2006–2015 гг., %</h3>
-                        <img src="image/au_chart-1.png" alt="Динамика запасов золота категорий А+В+С.">
+                            <sub>1</sub> в коренных и россыпных месторождениях в 2002–2015 гг., %</h3>
+                        <img src="image/au_chart-1.png" onclick="modalOpen()" alt="Динамика запасов золота категорий А+В+С.">
                     </div>
                     <div class="row__container2_item2">
                         <h3>Динамика добычи золота и прироста его запасов категорий А+В+С
                             <sub>1</sub>
-                            в результате геологоразведочных работ в 2006-2015 гг., тонн</h3>
-                        <img src="image/au_chart-2.png" alt="Динамика добычи золота и прироста его запасов категорий А+В+С">
+                            в результате геологоразведочных работ в 2002-2015 гг., тонн</h3>
+                        <img src="image/au_chart-2.png" onclick="modalOpen()" alt="Динамика добычи золота и прироста его запасов категорий А+В+С">
                     </div>
                     <div class="row__container2_item2">
                         <h3>Распределение запасов золота и его прогнозных ресурсов категории Р
                             <sub>1</sub>
                             по субъектам Российской Федерации, тонн</h3>
-                        <img src="image/au_chart-3.png" alt="Распределение запасов золота и его прогнозных ресурсов">
+                        <img src="image/au_chart-3.png" onclick="modalOpen()" alt="Распределение запасов золота и его прогнозных ресурсов">
                     </div>
                     <div class="row__container2_item2">
                         <h3>Динамика движения запасов золота в 2006–2015 гг., тонн</h3>
-                        <img src="image/au_chart-4.png" alt="Динамика движения запасов золота в 2006–2015 гг">
+                        <img src="image/au_chart-4.png" onclick="modalOpen()" alt="Динамика движения запасов золота в 2006–2015 гг">
                     </div>
                 </div>
             </div>
+
         </section>
     </main>
+
+    <div class="modals">
+        <div class="modals__overlay" onclick="modalClose()">
+        </div>
+        <div class="modals__content">
+            <div id="chartdiv" style="width: 100%; height: 500px; background-color: #FFFFFF;"></div>
+        </div>
+    </div>
 
     <footer class="footer">
         <div class="footer__item">
