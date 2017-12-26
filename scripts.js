@@ -330,6 +330,7 @@ AmCharts.makeChart("chartdiv", {
   colors: ["#67b7dc", "#fdd400"],
   startDuration: 1,
   startEffect: "bounce",
+  bold: true,
   theme: "light",
   categoryAxis: {
     gridPosition: "start"
@@ -341,7 +342,7 @@ AmCharts.makeChart("chartdiv", {
       fillAlphas: 1,
       id: "AmGraph-1",
       tabIndex: 5,
-      title: "Коренные, включая комплексные",
+      title: "Рудные, включая комплексные",
       type: "column",
       labelText: "[[value]]%",
       valueField: "indigenous"
@@ -375,12 +376,12 @@ AmCharts.makeChart("chartdiv", {
   },
   titles: [
     {
-      bold: false,
+      bold: true,
       id: "Title-1",
-      size: 16,
+      size: 24,
       tabIndex: 0,
       text:
-        "Динамика запасов золота категорий А+В+С1 в коренных и россыпных месторождениях в 2002–2015 гг., %"
+        "Динамика запасов золота категорий А+В+С1 в рудных и россыпных месторождениях в 2002–2015 гг., %"
     }
   ],
   dataProvider: [
