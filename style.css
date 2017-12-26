@@ -343,7 +343,7 @@ h4 {
 .modals {
   display: none;
   position: fixed;
-  width: 900px;
+  width: 1200px;
   left: 50%;
   top: 50%;
   z-index: 2;

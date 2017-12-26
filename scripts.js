@@ -343,6 +343,7 @@ AmCharts.makeChart("chartdiv", {
       tabIndex: 5,
       title: "Коренные, включая комплексные",
       type: "column",
+      labelText: "[[value]]%",
       valueField: "indigenous"
     },
     {
@@ -350,6 +351,7 @@ AmCharts.makeChart("chartdiv", {
       fillAlphas: 1,
       id: "AmGraph-2",
       title: "Россыпные",
+      labelText: "[[value]]%",
       type: "column",
       valueField: "scattered"
     }
