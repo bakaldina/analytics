@@ -330,7 +330,7 @@ AmCharts.makeChart("chartdiv", {
   colors: ["#67b7dc", "#fdd400"],
   startDuration: 1,
   startEffect: "bounce",
-  bold: true,
+  fontSize: 16,
   theme: "light",
   categoryAxis: {
     gridPosition: "start"
@@ -342,6 +342,7 @@ AmCharts.makeChart("chartdiv", {
       fillAlphas: 1,
       id: "AmGraph-1",
       tabIndex: 5,
+      fontSize: 10,
       title: "Рудные, включая комплексные",
       type: "column",
       labelText: "[[value]]%",
@@ -352,6 +353,7 @@ AmCharts.makeChart("chartdiv", {
       fillAlphas: 1,
       id: "AmGraph-2",
       title: "Россыпные",
+      fontSize: 10,
       labelText: "[[value]]%",
       type: "column",
       valueField: "scattered"
@@ -364,7 +366,7 @@ AmCharts.makeChart("chartdiv", {
       stackType: "100%",
       offset: 1,
       title: "%",
-      titleBold: false
+      titleBold: true
     }
   ],
   allLabels: [],
@@ -372,6 +374,7 @@ AmCharts.makeChart("chartdiv", {
   legend: {
     enabled: true,
     labelWidth: 0,
+    titleBold: true,
     useGraphSettings: true
   },
   titles: [
