@@ -512,6 +512,161 @@ AmCharts.makeChart("chartdiv1", {
     enabled: true
   }
 });
+AmCharts.makeChart("chartdiv2", {
+  type: "serial",
+  categoryField: "category",
+  columnSpacing: 0,
+  startDuration: 1,
+  fontSize: 16,
+  theme: "light",
+  categoryAxis: {
+    gridPosition: "start"
+  },
+  trendLines: [],
+  graphs: [
+    {
+      balloonText:
+        "<b>[[title]]</b> в тоннах <br>[[category]]: <b>[[value]]</b>",
+      fillAlphas: 1,
+      id: "AmGraph-1",
+      title: "Запасы категорий A+B+C1",
+      type: "column",
+      fontSize: 10,
+      tabIndex: 5,
+      labelText: "[[value]]",
+      valueField: "abc1"
+    },
+    {
+      balloonText:
+        "<b>[[title]]</b> в тоннах <br>[[category]]: <b>[[value]]</b>",
+      fillAlphas: 1,
+      id: "AmGraph-2",
+      title: "Запасы категорий C2",
+      fontSize: 10,
+      tabIndex: 5,
+      labelText: "[[value]]",
+      type: "column",
+      valueField: "c2"
+    }
+  ],
+  guides: [],
+  valueAxes: [
+    {
+      id: "ValueAxis-1",
+      title: "тонн"
+    }
+  ],
+  allLabels: [],
+  balloon: {},
+  legend: {
+    enabled: true,
+    useGraphSettings: true
+  },
+  titles: [
+    {
+      id: "Title-1",
+      size: 24,
+      text: "Динамика движения запасов в 1993–2015 гг., тонн"
+    }
+  ],
+  dataProvider: [
+    {
+      category: "1993",
+      c2: "2411",
+      abc1: "6623"
+    },
+    {
+      category: "1995",
+      c2: "2398",
+      abc1: "6602"
+    },
+    {
+      category: "1997",
+      c2: "2433",
+      abc1: "6470"
+    },
+    {
+      category: "1999",
+      c2: "2441",
+      abc1: "6263"
+    },
+    {
+      category: "2001",
+      c2: "2492",
+      abc1: "6058"
+    },
+    {
+      category: "2002",
+      c2: "2409",
+      abc1: "5934"
+    },
+    {
+      category: "2003",
+      c2: "2417",
+      abc1: "5812"
+    },
+    {
+      category: "2004",
+      c2: "2435",
+      abc1: "5716"
+    },
+    {
+      category: "2005",
+      c2: "2741",
+      abc1: "5677"
+    },
+    {
+      category: "2006",
+      c2: "2871",
+      abc1: "6918"
+    },
+    {
+      category: "2007",
+      c2: "3388",
+      abc1: "7529"
+    },
+    {
+      category: "2008",
+      c2: "3339",
+      abc1: "7861"
+    },
+    {
+      category: "2009",
+      c2: "3974",
+      abc1: "7958"
+    },
+    {
+      category: "2010",
+      c2: "4217",
+      abc1: "7982"
+    },
+    {
+      category: "2011",
+      c2: "4407",
+      abc1: "8098"
+    },
+    {
+      category: "2012",
+      c2: "4698",
+      abc1: "8047"
+    },
+    {
+      category: "2013",
+      c2: "4860",
+      abc1: "8053"
+    },
+    {
+      category: "2014",
+      c2: "5128",
+      abc1: "8006"
+    },
+    {
+      category: "2015",
+      c2: "5658",
+      abc1: "8160"
+    }
+  ]
+});
 $(document).ready(function() {
   var $button1 = document.querySelector(".button-1"),
     $container1 = document.querySelector(".container-1"),
@@ -535,6 +690,7 @@ $(document).ready(function() {
   });
 
   $("#userInfo").on("click", function() {
+    Запа;
     $(this)
       .closest("li")
       .toggleClass("active");
@@ -562,6 +718,14 @@ function modalOpen1() {
 
 function modalClose1() {
   $(".modals1").hide();
+}
+
+function modalOpen2() {
+  $(".modals2").show();
+}
+
+function modalClose2() {
+  $(".modals2").hide();
 }
 
 // function modalCreate(id) {
