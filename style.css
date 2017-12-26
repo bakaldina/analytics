@@ -320,6 +320,7 @@ h4 {
 .main .row__container2_item2 img {
   width: 80%;
   height: 200px;
+  cursor: pointer;
 }
 #chartdiv {
   width: 100%;
