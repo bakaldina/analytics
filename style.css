@@ -343,7 +343,8 @@ h4 {
 }
 .modals,
 .modals1,
-.modals2 {
+.modals2,
+.modals3 {
   display: none;
   position: fixed;
   width: 1200px;
@@ -353,14 +354,16 @@ h4 {
 }
 .modals__content,
 .modals1__content,
-.modals2__content {
+.modals2__content,
+.modals3__content {
   transform: translate(-50%, -50%);
   z-index: 2;
   position: relative;
 }
 .modals__overlay,
 .modals1__overlay,
-.modals2__overlay {
+.modals2__overlay,
+.modals3__overlay {
   z-index: 1;
   width: 100%;
   height: 100%;
@@ -368,6 +371,9 @@ h4 {
   top: 0;
   left: 0;
   background-color: rgba(0, 0, 0, 0.5);
+}
+.amcharts-map-image {
+  display: none;
 }
 .footer {
   height: 270px;

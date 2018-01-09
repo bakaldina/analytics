@@ -512,6 +512,7 @@ AmCharts.makeChart("chartdiv1", {
     enabled: true
   }
 });
+
 AmCharts.makeChart("chartdiv2", {
   type: "serial",
   categoryField: "category",
@@ -667,6 +668,894 @@ AmCharts.makeChart("chartdiv2", {
     }
   ]
 });
+
+AmCharts.makeChart("map", {
+  type: "map",
+  pathToImages: "http://www.amcharts.com/lib/3/images/",
+  addClassNames: true,
+  fontSize: 15,
+  color: "#000000",
+  projection: "mercator",
+  backgroundAlpha: 1,
+  backgroundColor: "rgba(255,255,255,1)",
+  dataProvider: {
+    map: "russiaLow",
+    getAreasFromMap: true,
+    images: [
+      {
+        top: 40,
+        left: 60,
+        width: 80,
+        height: 40,
+        pixelMapperLogo: true,
+        imageURL: "http://pixelmap.amcharts.com/static/img/logo-black.svg",
+        url: "http://www.amcharts.com"
+      },
+      {
+        selectable: true,
+        longitude: 93.8855,
+        latitude: 65.4803,
+        label: "43,2",
+        labelPosition: "right",
+        labelColor: "rgba(255,255,255,0.8)",
+        labelRollOverColor: "#ffffff",
+        labelFontSize: 20.8
+      },
+      {
+        selectable: true,
+        longitude: 124.6047,
+        latitude: 65.9476,
+        label: "23,1",
+        labelPosition: "right",
+        labelColor: "rgba(255,255,255,0.8)",
+        labelRollOverColor: "#ffffff",
+        labelFontSize: 18
+      },
+      {
+        selectable: true,
+        longitude: 169.137,
+        latitude: 66.1687,
+        label: "4,6",
+        labelPosition: "right",
+        labelColor: "rgba(255,255,255,0.8)",
+        labelRollOverColor: "#ffffff",
+        labelFontSize: 16.1
+      },
+      {
+        selectable: true,
+        longitude: 148.8885,
+        latitude: 62.4153,
+        label: "17,2",
+        labelPosition: "right",
+        labelColor: "rgba(255,255,255,0.8)",
+        labelRollOverColor: "#ffffff",
+        labelFontSize: 15
+      },
+      {
+        selectable: true,
+        longitude: 125.6284,
+        latitude: 53.1884,
+        label: "16,4",
+        labelPosition: "right",
+        labelColor: "rgba(255,255,255,0.8)",
+        labelRollOverColor: "#ffffff",
+        labelFontSize: 15
+      },
+      {
+        selectable: true,
+        longitude: 133.155,
+        latitude: 45.2158,
+        label: "0,4",
+        labelPosition: "right",
+        labelColor: "rgba(0,0,0,0.8)",
+        labelRollOverColor: "#000000",
+        labelFontSize: 12.2
+      },
+      {
+        selectable: true,
+        longitude: 129.8084,
+        latitude: 47.7792,
+        label: "0,1",
+        labelPosition: "right",
+        labelColor: "rgba(0,0,0,0.8)",
+        labelRollOverColor: "#000000",
+        labelFontSize: 13.6
+      },
+      {
+        selectable: true,
+        longitude: 140.7578,
+        latitude: 48.5875,
+        label: "0,2",
+        labelPosition: "right",
+        labelColor: "rgba(0,0,0,0.8)",
+        labelRollOverColor: "#000000",
+        labelFontSize: 13.3
+      },
+      {
+        selectable: true,
+        longitude: 113.0049,
+        latitude: 51.2409,
+        label: "8,1",
+        labelPosition: "right",
+        labelColor: "rgba(255,255,255,0.8)",
+        labelRollOverColor: "#ffffff",
+        labelFontSize: 15
+      },
+      {
+        selectable: true,
+        longitude: 108.9796,
+        latitude: 53.6259,
+        label: "6,5",
+        labelPosition: "right",
+        labelColor: "rgba(255,255,255,0.8)",
+        labelRollOverColor: "#ffffff",
+        labelFontSize: 15
+      },
+      {
+        selectable: true,
+        longitude: 102.1715,
+        latitude: 55.3841,
+        label: "17,4",
+        labelPosition: "right",
+        labelColor: "rgba(255,255,255,0.8)",
+        labelRollOverColor: "#ffffff",
+        labelFontSize: 15
+      },
+      {
+        selectable: true,
+        longitude: 91.2145,
+        latitude: 50.8598,
+        label: "1,6",
+        labelPosition: "right",
+        labelColor: "rgba(255,255,255,0.8)",
+        labelRollOverColor: "#ffffff",
+        labelFontSize: 15
+      },
+      {
+        selectable: true,
+        longitude: 89.2735,
+        latitude: 52.7927,
+        label: "1,2",
+        labelPosition: "right",
+        labelColor: "rgba(255,255,255,0.8)",
+        labelRollOverColor: "#ffffff",
+        labelFontSize: 9.5
+      },
+      {
+        selectable: true,
+        longitude: 85.9024,
+        latitude: 50.6297,
+        label: "0,6",
+        labelPosition: "right",
+        labelColor: "rgba(255,255,255,0.8)",
+        labelRollOverColor: "#ffffff",
+        labelFontSize: 12
+      },
+      {
+        selectable: true,
+        longitude: 80.2651,
+        latitude: 52.6604,
+        label: "0,2",
+        labelPosition: "right",
+        labelColor: "rgba(255,255,255,0.8)",
+        labelRollOverColor: "#ffffff",
+        labelFontSize: 15
+      },
+      {
+        selectable: true,
+        longitude: 85.0351,
+        latitude: 54.3898,
+        label: "0,7",
+        labelPosition: "right",
+        labelColor: "rgba(255,255,255,0.8)",
+        labelRollOverColor: "#ffffff",
+        labelFontSize: 12.8
+      },
+      {
+        selectable: true,
+        longitude: 78.2053,
+        latitude: 55.3662,
+        label: "0,3",
+        labelPosition: "right",
+        labelColor: "rgba(255,255,255,0.8)",
+        labelRollOverColor: "#ffffff",
+        labelFontSize: 13.3
+      },
+      {
+        selectable: true,
+        longitude: 68.4438,
+        latitude: 60.8278,
+        label: "0,2",
+        labelPosition: "right",
+        labelColor: "rgba(255,255,255,0.8)",
+        labelRollOverColor: "#ffffff",
+        labelFontSize: 15
+      },
+      {
+        selectable: true,
+        longitude: 59.6672,
+        latitude: 58.1557,
+        label: "11,2",
+        labelPosition: "right",
+        labelColor: "rgba(255,255,255,0.8)",
+        labelRollOverColor: "#ffffff",
+        labelFontSize: 15
+      },
+      {
+        selectable: true,
+        longitude: 53.9074,
+        latitude: 59.0573,
+        label: "0,02",
+        labelPosition: "right",
+        labelColor: "rgba(255,255,255,0.8)",
+        labelRollOverColor: "#ffffff",
+        labelFontSize: 12.5
+      },
+      {
+        selectable: true,
+        longitude: 55.114,
+        latitude: 53.9641,
+        label: "7,1",
+        labelPosition: "right",
+        labelColor: "rgba(255,255,255,0.8)",
+        labelRollOverColor: "#ffffff",
+        labelFontSize: 12
+      },
+      {
+        selectable: true,
+        longitude: 59.4238,
+        latitude: 54.9235,
+        label: "11,7",
+        labelPosition: "right",
+        labelColor: "rgba(255,255,255,0.8)",
+        labelRollOverColor: "#ffffff",
+        labelFontSize: 10.3
+      },
+      {
+        selectable: true,
+        longitude: 52.729,
+        latitude: 52.0682,
+        label: "8,1",
+        labelPosition: "right",
+        labelColor: "rgba(255,255,255,0.8)",
+        labelRollOverColor: "#ffffff",
+        labelFontSize: 11.1
+      },
+      {
+        selectable: true,
+        longitude: 41.4341,
+        latitude: 43.1047,
+        label: "0,5",
+        labelPosition: "right",
+        labelColor: "rgba(0,0,0,0.8)",
+        labelRollOverColor: "#000000",
+        labelFontSize: 10
+      },
+      {
+        selectable: true,
+        longitude: 43.9446,
+        latitude: 42.1988,
+        label: "0,001",
+        labelPosition: "right",
+        labelColor: "rgba(0,0,0,0.8)",
+        labelRollOverColor: "#000000",
+        labelFontSize: 8.7
+      },
+      {
+        selectable: true,
+        longitude: 31.9143,
+        latitude: 67.6657,
+        label: "0,1",
+        labelPosition: "right",
+        labelColor: "rgba(255,255,255,0.8)",
+        labelRollOverColor: "#ffffff",
+        labelFontSize: 13.3
+      },
+      {
+        selectable: true,
+        longitude: 105.195,
+        latitude: 80.5448,
+        label: "добыча",
+        labelPosition: "right",
+        labelColor: "rgba(141,94,7,0.8)",
+        labelRollOverColor: "#a26c08",
+        labelFontSize: 27.9
+      },
+      {
+        selectable: true,
+        longitude: 134.4632,
+        latitude: 49.9188,
+        label: "17,7",
+        labelPosition: "right",
+        labelColor: "rgba(255,255,255,0.8)",
+        labelRollOverColor: "#ffffff",
+        labelFontSize: 15
+      },
+      {
+        selectable: true,
+        longitude: 297449413782.5486,
+        latitude: 501955659055.0943,
+        label: "Au",
+        labelPosition: "right",
+        labelColor: "rgba(0,0,0,1)",
+        labelRollOverColor: "#000000",
+        labelFontSize: 22.7
+      },
+      {
+        selectable: true,
+        longitude: 165.6171,
+        latitude: 274.3768,
+        label: "Text...",
+        labelPosition: "right",
+        labelColor: "rgba(0,0,0,1)",
+        labelRollOverColor: "rgba(0,0,0,1)",
+        labelFontSize: 15
+      },
+      {
+        selectable: true,
+        longitude: 334969272234754100000,
+        latitude: -453291688572337900000,
+        label: "Au",
+        labelPosition: "right",
+        labelColor: "rgba(0,0,0,0.8)",
+        labelRollOverColor: "#000000",
+        labelFontSize: 24.9
+      },
+      {
+        selectable: true,
+        longitude: -71854111.4001,
+        latitude: 149772714.7698,
+        label: "Au",
+        labelPosition: "right",
+        labelColor: "rgba(0,0,0,0.8)",
+        labelRollOverColor: "#000000",
+        labelFontSize: 24.6
+      },
+      {
+        selectable: true,
+        longitude: 139.1316,
+        latitude: 54.601,
+        label: "2,5",
+        labelPosition: "right",
+        labelColor: "rgba(255,255,255,0.8)",
+        labelRollOverColor: "#ffffff",
+        labelFontSize: 15
+      },
+      {
+        selectable: true,
+        longitude: -2012472212316604,
+        latitude: 30683422358105556,
+        label: "Au",
+        labelPosition: "right",
+        labelColor: "rgba(9,8,8,0.8)",
+        labelRollOverColor: "#0a0909",
+        labelFontSize: 48
+      },
+      {
+        selectable: true,
+        longitude: 109.5357,
+        latitude: 81.4149,
+        label: "Au",
+        labelPosition: "right",
+        labelColor: "rgba(9,8,8,0.8)",
+        labelRollOverColor: "#0a0909",
+        labelFontSize: 26.8
+      },
+      // {
+      //   selectable: true,
+      //   longitude: 89.9136,
+      //   latitude: 69.6076,
+      //   svgPath:
+      //     "M3.5,13.277C3.5,6.22,9.22,0.5,16.276,0.5C23.333,0.5,29.053,6.22,29.053,13.277C29.053,14.54,28.867,15.759,28.526,16.914C26.707,24.271,16.219,32.5,16.219,32.5C16.219,32.5,4.37,23.209,3.673,15.542C3.673,15.542,3.704,15.536,3.704,15.536C3.572,14.804,3.5,14.049,3.5,13.277C3.5,13.277,3.5,13.277,3.5,13.277M16.102,16.123C18.989,16.123,21.329,13.782,21.329,10.895C21.329,8.008,18.989,5.668,16.102,5.668C13.216,5.668,10.876,8.008,10.876,10.895C10.876,13.782,13.216,16.123,16.102,16.123C16.102,16.123,16.102,16.123,16.102,16.123",
+      //   color: "rgba(255,255,255,0.8)",
+      //   scale: 1
+      // },
+      // {
+      //   selectable: true,
+      //   longitude: 87.6034,
+      //   latitude: 67.5382,
+      //   label: "блабла",
+      //   labelPosition: "right",
+      //   labelColor: "rgba(255,255,255,0.8)",
+      //   labelRollOverColor: "#ffffff",
+      //   labelFontSize: 10.3
+      // },
+      {
+        selectable: true,
+        longitude: 156.5856,
+        latitude: 55.9815,
+        label: "2,5",
+        labelPosition: "right",
+        labelColor: "rgba(255,255,255,0.8)",
+        labelRollOverColor: "#ffffff",
+        labelFontSize: 15
+      }
+    ],
+    areas: [
+      {
+        id: "RU-AD",
+        title: "Респ. Адыгея",
+        color: "rgba(173,168,168,1)"
+      },
+      {
+        id: "RU-ALT",
+        title: "Алтайский край",
+        color: "rgba(222,157,83,0.8)"
+      },
+      {
+        id: "RU-AMU",
+        title: "Амурская обл.",
+        color: "rgba(111,38,38,0.8)"
+      },
+      {
+        id: "RU-ARK",
+        title: "Архангельская обл.",
+        color: "rgba(173,168,168,1)"
+      },
+      {
+        id: "RU-AST",
+        title: "Астраханская обл.",
+        color: "rgba(173,168,168,1)"
+      },
+      {
+        id: "RU-BA",
+        title: "Респ. Башкоторстан",
+        color: "rgba(198,19,19,0.8)"
+      },
+      {
+        id: "RU-BEL",
+        title: "Белгородская обл.",
+        color: "rgba(173,168,168,1)"
+      },
+      {
+        id: "RU-BRY",
+        title: "Брянская область",
+        color: "rgba(173,168,168,1)"
+      },
+      {
+        id: "RU-BU",
+        title: "Респ. Бурятия",
+        color: "rgba(198,19,19,0.8)"
+      },
+      {
+        id: "RU-CE",
+        title: "Респ. Чечня",
+        color: "rgba(173,168,168,1)"
+      },
+      {
+        id: "RU-CHE",
+        title: "Челябинская обл.",
+        color: "rgba(198,19,19,0.8)"
+      },
+      {
+        id: "RU-CHU",
+        title: "Чукотский АО",
+        color: "rgba(172,94,5,0.8)"
+      },
+      {
+        id: "RU-CU",
+        title: "Чувашская Респ.",
+        color: "rgba(173,168,168,1)"
+      },
+      {
+        id: "RU-DA",
+        title: "Респ. Дагестан",
+        color: "rgba(173,168,168,1)"
+      },
+      {
+        id: "RU-AL",
+        title: "Респ. Алтай",
+        color: "rgba(222,157,83,0.8)"
+      },
+      {
+        id: "RU-IRK",
+        title: "Иркутская обл.",
+        color: "rgba(111,38,38,0.8)"
+      },
+      {
+        id: "RU-IVA",
+        title: "Ивановская обл.",
+        color: "rgba(173,168,168,1)"
+      },
+      {
+        id: "RU-KB",
+        title: "Респ. Кабардино-Балкария",
+        color: "rgba(173,168,168,1)"
+      },
+      {
+        id: "RU-KC",
+        title: "Карачаево-Черкесская Респ.",
+        color: "rgba(222,157,83,0.8)"
+      },
+      {
+        id: "RU-KDA",
+        title: "Краснодарский край",
+        color: "rgba(173,168,168,1)"
+      },
+      {
+        id: "RU-KEM",
+        title: "Кемеровская обл.",
+        color: "rgba(222,157,83,0.8)"
+      },
+      {
+        id: "RU-KLU",
+        title: "Калужская область",
+        color: "rgba(173,168,168,1)"
+      },
+      {
+        id: "RU-KHA",
+        title: "Хабаровский край",
+        color: "rgba(111,38,38,0.8)"
+      },
+      {
+        id: "RU-KR",
+        title: "Респ. Карелия",
+        color: "rgba(173,168,168,1)"
+      },
+      {
+        id: "RU-KK",
+        title: "Респ. Хакасия",
+        color: "rgba(172,94,5,0.8)"
+      },
+      {
+        id: "RU-KL",
+        title: "Респ. Калмыкия",
+        color: "rgba(173,168,168,1)"
+      },
+      {
+        id: "RU-KHM",
+        title: "Ханты-Мансийский АО - Югра",
+        color: "rgba(222,157,83,0.8)"
+      },
+      {
+        id: "RU-KGD",
+        title: "Калининградская обл.",
+        color: "rgba(173,168,168,1)"
+      },
+      {
+        id: "RU-KO",
+        title: "Респ. Коми",
+        color: "rgba(173,168,168,1)"
+      },
+      {
+        id: "RU-KAM",
+        title: "Камчатский край",
+        color: "rgba(172,94,5,0.8)"
+      },
+      {
+        id: "RU-KRS",
+        title: "Курская область",
+        color: "rgba(173,168,168,1)"
+      },
+      {
+        id: "RU-KOS",
+        title: "Костромская обл.",
+        color: "rgba(173,168,168,1)"
+      },
+      {
+        id: "RU-KU",
+        title: "Курганская обл.",
+        color: "rgba(173,168,168,1)"
+      },
+      {
+        id: "RU-KIR",
+        title: "Кировская обл.",
+        color: "rgba(173,168,168,1)"
+      },
+      {
+        id: "RU-KYA",
+        title: "Красноярский край",
+        color: "rgba(42,1,1,0.8)"
+      },
+      {
+        id: "RU-LEN",
+        title: "Ленинградская обл.",
+        color: "rgba(173,168,168,1)"
+      },
+      {
+        id: "RU-LIP",
+        title: "Липецкая область",
+        color: "rgba(173,168,168,1)"
+      },
+      {
+        id: "RU-MOW",
+        title: "Москва",
+        color: "rgba(173,168,168,1)"
+      },
+      {
+        id: "RU-ME",
+        title: "Респ. Марий Эл",
+        color: "rgba(173,168,168,1)"
+      },
+      {
+        id: "RU-MAG",
+        title: "Магаданская обл.",
+        color: "rgba(111,38,38,0.8)"
+      },
+      {
+        id: "RU-MUR",
+        title: "Мурманская обл.",
+        color: "rgba(222,157,83,0.8)"
+      },
+      {
+        id: "RU-MO",
+        title: "Респ. Мордовия",
+        color: "rgba(173,168,168,1)"
+      },
+      {
+        id: "RU-MOS",
+        title: "Московская обл.",
+        color: "rgba(173,168,168,1)"
+      },
+      {
+        id: "RU-NGR",
+        title: "Новгородская обл.",
+        color: "rgba(173,168,168,1)"
+      },
+      {
+        id: "RU-NEN",
+        title: "Ненецкий АО",
+        color: "rgba(173,168,168,1)"
+      },
+      {
+        id: "RU-SE",
+        title: "Респ. Северная Осетия - Алания",
+        color: "rgba(222,157,83,0.8)"
+      },
+      {
+        id: "RU-NVS",
+        title: "Новосибирская обл.",
+        color: "rgba(222,157,83,0.8)"
+      },
+      {
+        id: "RU-NIZ",
+        title: "Нижегородская обл.",
+        color: "rgba(173,168,168,1)"
+      },
+      {
+        id: "RU-ORE",
+        title: "Оренбургская обл.",
+        color: "rgba(198,19,19,0.8)"
+      },
+      {
+        id: "RU-ORL",
+        title: "Орловская обл.",
+        color: "rgba(173,168,168,1)"
+      },
+      {
+        id: "RU-OMS",
+        title: "Омская обл.",
+        color: "rgba(173,168,168,1)"
+      },
+      {
+        id: "RU-PER",
+        title: "Пермский край",
+        color: "rgba(222,157,83,0.8)"
+      },
+      {
+        id: "RU-PRI",
+        title: "Приморский край",
+        color: "rgba(222,157,83,0.8)"
+      },
+      {
+        id: "RU-PSK",
+        title: "Псковская обл.",
+        color: "rgba(173,168,168,1)"
+      },
+      {
+        id: "RU-PNZ",
+        title: "Пензенская обл.",
+        color: "rgba(173,168,168,1)"
+      },
+      {
+        id: "RU-ROS",
+        title: "Ростовская обл.",
+        color: "rgba(173,168,168,1)"
+      },
+      {
+        id: "RU-RYA",
+        title: "Рязанская обл.",
+        color: "rgba(173,168,168,1)"
+      },
+      {
+        id: "RU-SAM",
+        title: "Самарская обл.",
+        color: "rgba(173,168,168,1)"
+      },
+      {
+        id: "RU-SA",
+        title: "Респ. Саха (Якутия)",
+        color: "rgba(42,1,1,0.8)"
+      },
+      {
+        id: "RU-SAK",
+        title: "Сахалинская обл.",
+        color: "rgba(222,157,83,0.8)"
+      },
+      {
+        id: "RU-SMO",
+        title: "Смоленская обл.",
+        color: "rgba(173,168,168,1)"
+      },
+      {
+        id: "RU-SPE",
+        title: "Санкт-Петербург",
+        color: "rgba(173,168,168,1)"
+      },
+      {
+        id: "RU-SAR",
+        title: "Саратовская обл.",
+        color: "rgba(173,168,168,1)"
+      },
+      {
+        id: "RU-STA",
+        title: "Ставропольский край",
+        color: "rgba(173,168,168,1)"
+      },
+      {
+        id: "RU-SVE",
+        title: "Свердловская обл.",
+        color: "rgba(198,19,19,0.8)"
+      },
+      {
+        id: "RU-TAM",
+        title: "Тамбовская обл.",
+        color: "rgba(173,168,168,1)"
+      },
+      {
+        id: "RU-TOM",
+        title: "Томская обл.",
+        color: "rgba(173,168,168,1)"
+      },
+      {
+        id: "RU-TUL",
+        title: "Тульская область",
+        color: "rgba(173,168,168,1)"
+      },
+      {
+        id: "RU-TA",
+        title: "Респ. Татарстан",
+        color: "rgba(173,168,168,1)"
+      },
+      {
+        id: "RU-TY",
+        title: "Респ. Тыва",
+        color: "rgba(172,94,5,0.8)"
+      },
+      {
+        id: "RU-TVE",
+        title: "Тверская обл.",
+        color: "rgba(173,168,168,1)"
+      },
+      {
+        id: "RU-TYU",
+        title: "Тюменская обл.",
+        color: "rgba(173,168,168,1)"
+      },
+      {
+        id: "RU-UD",
+        title: "Респ. Удмуртия",
+        color: "rgba(173,168,168,1)"
+      },
+      {
+        id: "RU-ULY",
+        title: "Ульяновская обл.",
+        color: "rgba(173,168,168,1)"
+      },
+      {
+        id: "RU-VGG",
+        title: "Волгоградская обл.",
+        color: "rgba(173,168,168,1)"
+      },
+      {
+        id: "RU-VLA",
+        title: "Владимирская обл.",
+        color: "rgba(173,168,168,1)"
+      },
+      {
+        id: "RU-YAN",
+        title: "Ямало-Ненецкий АО",
+        color: "rgba(173,168,168,1)"
+      },
+      {
+        id: "RU-VLG",
+        title: "Вологодская обл.",
+        color: "rgba(173,168,168,1)"
+      },
+      {
+        id: "RU-VOR",
+        title: "Воронежская обл.",
+        color: "rgba(173,168,168,1)"
+      },
+      {
+        id: "RU-YAR",
+        title: "Ярославская обл.",
+        color: "rgba(173,168,168,1)"
+      },
+      {
+        id: "RU-YEV",
+        title: "Еврейская АО",
+        color: "rgba(222,157,83,0.8)"
+      },
+      {
+        id: "RU-ZAB",
+        title: "Забайкальский край",
+        color: "rgba(198,19,19,0.8)"
+      }
+    ]
+    // lines: [
+    //   {
+    //     arc: 0,
+    //     selectable: true,
+    //     color: "rgba(255,255,255,0.8)",
+    //     thickness: 1.7,
+    //     dashLength: 0,
+    //     longitudes: [77.338, 76.796],
+    //     latitudes: [69.181, 75.5407],
+    //     arrow: "none",
+    //     arrowSize: 10.2
+    //   },
+    //   {
+    //     arc: 0,
+    //     selectable: true,
+    //     color: "rgba(255,255,255,0.8)",
+    //     thickness: 2.1,
+    //     dashLength: 0,
+    //     longitudes: [86.0108, 85.6856],
+    //     latitudes: [68.3467, 76.1048],
+    //     arrow: "none",
+    //     arrowSize: 12.600000000000001
+    //   }
+    // ]
+  },
+  balloon: {
+    horizontalPadding: 15,
+    borderAlpha: 0,
+    borderThickness: 1,
+    verticalPadding: 15
+  },
+  areasSettings: {
+    color: "rgba(173,168,168,1)",
+    outlineColor: "rgba(255,255,255,1)",
+    rollOverOutlineColor: "rgba(255,255,255,1)",
+    rollOverBrightness: 20,
+    selectedBrightness: 20,
+    selectable: true,
+    unlistedAreasAlpha: 0,
+    unlistedAreasOutlineAlpha: 0
+  },
+  imagesSettings: {
+    alpha: 1,
+    color: "rgba(173,168,168,1)",
+    outlineAlpha: 0,
+    rollOverOutlineAlpha: 0,
+    outlineColor: "rgba(255,255,255,1)",
+    rollOverBrightness: 20,
+    selectedBrightness: 20,
+    selectable: true
+  },
+  linesSettings: {
+    color: "rgba(173,168,168,1)",
+    selectable: true,
+    rollOverBrightness: 20,
+    selectedBrightness: 20
+  },
+  zoomControl: {
+    zoomControlEnabled: true,
+    homeButtonEnabled: false,
+    panControlEnabled: false,
+    right: 38,
+    bottom: 30,
+    minZoomLevel: 0.25,
+    gridHeight: 100,
+    gridAlpha: 0.1,
+    gridBackgroundAlpha: 0,
+    gridColor: "#FFFFFF",
+    draggerAlpha: 1,
+    buttonCornerRadius: 2
+  }
+});
+
 $(document).ready(function() {
   var $button1 = document.querySelector(".button-1"),
     $container1 = document.querySelector(".container-1"),
@@ -726,6 +1615,14 @@ function modalOpen2() {
 
 function modalClose2() {
   $(".modals2").hide();
+}
+
+function modalOpen3() {
+  $(".modals3").show();
+}
+
+function modalClose3() {
+  $(".modals3").hide();
 }
 
 // function modalCreate(id) {
