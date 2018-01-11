@@ -307,7 +307,7 @@ AmCharts.makeChart("chartdiv2", {
       autoGridCount: "true",
       axisAlpha: 1,
       gridAlpha: 0,
-      title: "тонны золота"
+      title: "тонн"
     }
   ],
   startDuration: 1,
@@ -1607,6 +1607,162 @@ AmCharts.makeChart("map", {
   }
 });
 
+AmCharts.makeChart("chartdiv5", {
+  type: "serial",
+  categoryField: "category",
+  theme: "light",
+  startDuration: 1,
+  fontSize: 16,
+  categoryAxis: {
+    gridPosition: "start"
+  },
+  trendLines: [],
+  balloon: {
+    horizontalPadding: 10,
+    verticalPadding: 8,
+    color: "#000"
+  },
+  legend: {
+    autoMargins: false,
+    equalWidths: true,
+    horizontalGap: 10,
+    markerSize: 10,
+    useGraphSettings: true,
+    valueWidth: 0
+  },
+  dataProvider: [
+    {
+      year: 2002,
+      expenses: 197,
+      income: 190
+    },
+    {
+      year: 2003,
+      expenses: 201,
+      income: 150
+    },
+    {
+      year: 2004,
+      expenses: 199,
+      income: 173
+    },
+    {
+      year: 2005,
+      expenses: 186,
+      income: 120
+    },
+    {
+      year: 2006,
+      expenses: 213,
+      income: 87
+    },
+    {
+      year: 2007,
+      expenses: 201,
+      income: 171
+    },
+    {
+      year: 2008,
+      expenses: 190.4,
+      income: 419
+    },
+    {
+      year: 2009,
+      expenses: 235.1,
+      income: 261
+    },
+    {
+      year: 2010,
+      expenses: 265.5,
+      income: 280
+    },
+    {
+      year: 2011,
+      expenses: 262.2,
+      income: 382.6
+    },
+    {
+      year: 2012,
+      expenses: 260.7,
+      income: 284.7
+    },
+    {
+      year: 2013,
+      expenses: 324,
+      income: 302.3
+    },
+    {
+      year: 2014,
+      expenses: 311.8,
+      income: 278.9
+    },
+    {
+      year: 2015,
+      expenses: 286.6,
+      income: 472.5
+    }
+  ],
+  valueAxes: [
+    {
+      stackType: "regular",
+      autoGridCount: "true",
+      axisAlpha: 1,
+      gridAlpha: 0,
+      title: "тонн"
+    }
+  ],
+  startDuration: 1,
+  titles: [
+    {
+      bold: true,
+      id: "Title-1",
+      size: 24,
+      tabIndex: 0,
+      text: "Динамика добычи и экспорта в 2002-2015 гг., тонн"
+    }
+  ],
+  graphs: [
+    {
+      alphaField: "alpha",
+      balloonText:
+        "<b>[[title]]</b> <br> <span style='font-size:14px'>[[category]]: <b>[[value]] </b> [[additional]]</span>",
+      fillAlphas: 0.8,
+      lineAlpha: 0.3,
+      title: "Объем добычи в тоннах",
+      type: "column",
+      valueField: "expenses",
+      dashLengthField: "dashLengthColumn"
+    },
+    {
+      id: "graph2",
+      balloonText:
+        "<b>[[title]]</b> <br> <span style='font-size:14px'>[[category]]: <b>[[value]] </b> [[additional]]</span>",
+      bullet: "round",
+      tabIndex: 5,
+      lineThickness: 3,
+      bulletSize: 7,
+      bulletBorderAlpha: 1,
+      bulletColor: "#FFFFFF",
+      useLineColorForBulletBorder: true,
+      bulletBorderThickness: 3,
+      fillAlphas: 0,
+      lineAlpha: 1,
+      title: "Объем экспорта в тоннах",
+      valueField: "income",
+      dashLengthField: "dashLengthLine"
+    }
+  ],
+  categoryField: "year",
+  categoryAxis: {
+    gridPosition: "start",
+    axisAlpha: 1,
+    gridAlpha: 0,
+    tickLength: 1
+  },
+  export: {
+    enabled: true
+  }
+});
 $(document).ready(function() {
   var $button1 = document.querySelector(".button-1"),
     $container1 = document.querySelector(".container-1"),
@@ -1682,6 +1838,14 @@ function modalOpen4() {
 
 function modalClose4() {
   $(".modals4").hide();
+}
+
+function modalOpen5() {
+  $(".modals5").show();
+}
+
+function modalClose5() {
+  $(".modals5").hide();
 }
 // function modalCreate(id) {
 //   console.log(id);
