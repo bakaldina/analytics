@@ -183,7 +183,9 @@
                         <iframe style="width:265px;border:0;overflow:hidden;background-color:transparent;height:169px" scrolling="no" src="https://fortrader.org/informers/getInformer?st=25&cat=19&mult=0.99&showGetBtn=0&w=265&hideDiff=1&colors=false&items=1"></iframe>
                     </div>
                 </div>
-                <h2>Статистика запасов по золоту</h2>
+
+                <h2>Статистика по запасам</h2>
+
                 <div class="row__container2">
                     <div class="row__container2_item2">
                         <h3>Динамика запасов категорий А+В+С
@@ -197,8 +199,31 @@
                         <img src="image/au_chart-2.png" onclick="modalOpen1()" alt="Динамика добычи золота и прироста его запасов категорий А+В+С">
                     </div>
                     <div class="row__container2_item2">
+                        <h3>Динамика распределения запасов и ресурсов в 2004-2015 гг., тонн</h3>
+                        <img src="image/au_chart-3.png" onclick="modalOpen3()" alt="Динамика распределения запасов и ресурсов">
+                    </div>
+                    <div class="row__container2_item2">
+                        <h3>Динамика движения запасов в 1993–2015 гг., тонн</h3>
+                        <img src="image/au_chart-4.png" onclick="modalOpen2()" alt="Динамика движения запасов золота в 2006–2015 гг">
+                    </div>
+                </div>
+
+                <h2>Статистика по добыче</h2>
+
+                <div class="row__container2">
+                    <div class="row__container2_item2">
                         <h3>Распределение добычи по субъектам РФ в 2007г., тонн</h3>
-                        <img src="image/au_chart-3.png" onclick="modalOpen3()" alt="Распределение добычи по субъектам РФ">
+                        <img src="image/au_chart-5.png" onclick="modalOpen4()" alt="Распределение добычи по субъектам Р.">
+                    </div>
+                    <div class="row__container2_item2">
+                        <h3>Динамика добычи и прироста его запасов категорий А+В+С
+                            <sub>1</sub>
+                            в результате геологоразведочных работ в 1991-2015 гг., тонн</h3>
+                        <img src="image/au_chart-2.png" onclick="modalOpen1()" alt="Динамика добычи золота и прироста его запасов категорий А+В+С">
+                    </div>
+                    <div class="row__container2_item2">
+                        <h3>Распределение добычи по субъектам РФ в 2007г., тонн</h3>
+                        <img src="image/au_chart-4.png" onclick="modalOpen3()" alt="Распределение добычи по субъектам РФ">
                     </div>
                     <div class="row__container2_item2">
                         <h3>Динамика движения запасов в 1993–2015 гг., тонн</h3>
@@ -213,27 +238,34 @@
         <div class="modals__overlay" onclick="modalClose()">
         </div>
         <div class="modals__content">
-            <div id="chartdiv" style="width: 100%; height: 700px; background-color: #FFFFFF;"></div>
+            <div id="chartdiv1" style="width: 100%; height: 700px; background-color: #FFFFFF;"></div>
         </div>
     </div>
     <div class="modals1">
         <div class="modals1__overlay" onclick="modalClose1()">
         </div>
         <div class="modals1__content">
-            <div id="chartdiv1" style="width: 100%; height: 700px; background-color: #FFFFFF;"></div>
+            <div id="chartdiv2" style="width: 100%; height: 700px; background-color: #FFFFFF;"></div>
         </div>
     </div>
     <div class="modals2">
         <div class="modals2__overlay" onclick="modalClose2()">
         </div>
         <div class="modals2__content">
-            <div id="chartdiv2" style="width: 100%; height: 700px; background-color: #FFFFFF;"></div>
+            <div id="chartdiv4" style="width: 100%; height: 700px; background-color: #FFFFFF;"></div>
         </div>
     </div>
     <div class="modals3">
         <div class="modals3__overlay" onclick="modalClose3()">
         </div>
         <div class="modals3__content">
+            <div id="chartdiv3" style="width: 100%; height: 700px; background-color: #FFFFFF;"></div>
+        </div>
+    </div>
+    <div class="modals4">
+        <div class="modals4__overlay" onclick="modalClose4()">
+        </div>
+        <div class="modals4__content">
             <div id="map" style="width: 100%; height: 700px; background-color: #FFFFFF;"></div>
         </div>
     </div>

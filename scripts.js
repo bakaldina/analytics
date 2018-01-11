@@ -1,153 +1,4 @@
-// var chart = AmCharts.makeChart("chartdiv", {
-//   type: "serial",
-//   theme: "light",
-//   autoMargins: false,
-//   marginLeft: 60,
-//   marginRight: 8,
-//   marginTop: 10,
-//   marginBottom: 26,
-//   legend: {
-//     autoMargins: false,
-//     equalWidths: true,
-//     horizontalGap: 10,
-//     markerSize: 10,
-//     useGraphSettings: true,
-//     valueWidth: 0
-//   },
-//   dataProvider: [
-//     {
-//       year: 2004,
-//       resources: 42,
-//       federal: 5.2,
-//       subject: 0
-//     },
-//     {
-//       year: 2005,
-//       resources: 62,
-//       federal: 10.7,
-//       subject: 0
-//     },
-//     {
-//       year: 2006,
-//       resources: 94,
-//       federal: 16.4,
-//       subject: 0
-//     },
-//     {
-//       year: 2007,
-//       resources: 149.1,
-//       federal: 19.7,
-//       subject: 2.2
-//     },
-//     {
-//       year: 2008,
-//       resources: 199.5,
-//       federal: 22.0,
-//       subject: 3.6
-//     },
-//     {
-//       year: 2009,
-//       resources: 145.7,
-//       federal: 18.9,
-//       subject: 1.3
-//     },
-//     {
-//       year: 2010,
-//       resources: 169.8,
-//       federal: 20.6,
-//       subject: 0.6
-//     },
-//     {
-//       year: 2011,
-//       resources: 204.6,
-//       federal: 20.0,
-//       subject: 0.1
-//     },
-//     {
-//       year: 2012,
-//       resources: 224.1,
-//       federal: 27.0,
-//       subject: 0.1
-//     },
-//     {
-//       year: 2013,
-//       resources: 242.4,
-//       federal: 32.1,
-//       subject: 0.1
-//     },
-//     {
-//       year: 2014,
-//       resources: 345.5,
-//       federal: 25.7,
-//       subject: 0.2
-//     },
-//     {
-//       year: 2015,
-//       resources: 299.0,
-//       federal: 33.4,
-//       subject: 0
-//     },
-//     {
-//       year: 2016,
-//       resources: 295.0,
-//       federal: 33.4,
-//       subject: 0
-//     }
-//   ],
-//   valueAxes: [
-//     {
-//       stackType: "regular",
-//       title: "млрд. руб.",
-//       axisAlpha: 1,
-//       gridAlpha: 0
-//     }
-//   ],
-//   startDuration: 2,
-//   graphs: [
-//     {
-//       balloonText:
-//         "<b>[[title]]</b><br><span style='font-size:14px'>[[category]]: <b>[[value]]</b> <b>млрд</b></span>",
-//       fillAlphas: 0.8,
-//       lineAlpha: 0.3,
-//       title: "Средства недропользователей",
-//       type: "column",
-//       color: "#000000",
-//       valueField: "resources"
-//     },
-//     {
-//       balloonText:
-//         "<b>[[title]]</b><br><span style='font-size:14px'>[[category]]: <b>[[value]]</b> <b>млрд</b></span>",
-//       fillAlphas: 0.8,
-//       lineAlpha: 0.3,
-//       title: "Федеральный бюджет",
-//       type: "column",
-//       color: "#000000",
-//       valueField: "federal"
-//     },
-//     {
-//       balloonText:
-//         "<b>[[title]]</b><br><span style='font-size:14px'>[[category]]: <b>[[value]]</b> <b>млрд</b></span>",
-//       fillAlphas: 0.8,
-//       lineAlpha: 0.3,
-//       title: "Бюджет субъектов РФ",
-//       type: "column",
-//       color: "#000000",
-//       valueField: "subject"
-//     }
-//   ],
-//   categoryField: "year",
-//   categoryAxis: {
-//     gridPosition: "start",
-//     axisAlpha: 1,
-//     gridAlpha: 0,
-//     position: "left"
-//   },
-//   export: {
-//     enabled: true
-//   }
-// });
-
-AmCharts.makeChart("chartdiv", {
+AmCharts.makeChart("chartdiv1", {
   type: "serial",
   categoryField: "category",
   columnWidth: 0.84,
@@ -310,7 +161,7 @@ AmCharts.makeChart("chartdiv", {
   ]
 });
 
-AmCharts.makeChart("chartdiv1", {
+AmCharts.makeChart("chartdiv2", {
   type: "serial",
   categoryField: "category",
   theme: "light",
@@ -513,7 +364,207 @@ AmCharts.makeChart("chartdiv1", {
   }
 });
 
-AmCharts.makeChart("chartdiv2", {
+AmCharts.makeChart("chartdiv3", {
+  type: "serial",
+  categoryField: "category",
+  columnSpacing3D: 1,
+  columnWidth: 0,
+  zoomOutButtonRollOverAlpha: 0,
+  startDuration: 1,
+  theme: "light",
+  categoryAxis: {
+    gridPosition: "start"
+  },
+  trendLines: [],
+  graphs: [
+    {
+      balloonText: "<b>[[title]] </b>в [[category]]: <b>[[value]] тонн</b>",
+      columnWidth: 0.85,
+      fillAlphas: 1,
+      id: "AmGraph-1",
+      lineThickness: 0,
+      title: "категория P1",
+      fontSize: 14,
+      type: "column",
+      valueField: "column-1"
+    },
+    {
+      balloonText: "<b>[[title]] </b>в [[category]]: <b>[[value]] тонн</b>",
+      columnWidth: 0.85,
+      cornerRadiusTop: 2,
+      dashLength: 1,
+      fillAlphas: 1,
+      gradientOrientation: "horizontal",
+      id: "AmGraph-2",
+      lineThickness: 0,
+      title: "категория P2",
+      fontSize: 14,
+      type: "column",
+      valueField: "column-2"
+    },
+    {
+      balloonColor: "",
+      balloonText: "<b>[[title]] </b>в [[category]]: <b>[[value]] тонн</b>",
+      columnWidth: 0.85,
+      fillAlphas: 1,
+      fillColors: "#92C992",
+      id: "AmGraph-3",
+      lineAlpha: 0,
+      lineThickness: 0,
+      title: "категория P3",
+      fontSize: 14,
+      type: "column",
+      valueField: "column-3"
+    },
+    {
+      balloonColor: "",
+      balloonText: "<b>[[title]] </b>в [[category]]: <b>[[value]] тонн</b>",
+      columnWidth: 0.85,
+      dashLength: 1,
+      fillAlphas: 1,
+      fillColors: "#ED9F51",
+      id: "AmGraph-4",
+      lineAlpha: 0,
+      lineThickness: 0,
+      minDistance: 0,
+      negativeLineAlpha: 0,
+      title: "категория ABC1",
+      fontSize: 14,
+      type: "column",
+      valueField: "column-4"
+    },
+    {
+      balloonText: "<b>[[title]] </b>в [[category]]: <b>[[value]] тонн</b>",
+      columnWidth: 0.85,
+      fillAlphas: 1,
+      fillColors: "#D290E7",
+      gapPeriod: -3,
+      id: "AmGraph-5",
+      fontSize: 14,
+      lineThickness: 0,
+      title: "категория C2",
+      type: "column",
+      valueField: "column-5"
+    }
+  ],
+  guides: [],
+  valueAxes: [
+    {
+      id: "ValueAxis-1",
+      stackType: "100%",
+      title: "тонн",
+      titleFontSize: 17
+    }
+  ],
+  allLabels: [],
+  balloon: {
+    fontSize: 14
+  },
+  legend: {
+    enabled: true,
+    useGraphSettings: true,
+    fontSize: 14
+  },
+  titles: [
+    {
+      id: "Title-1",
+      size: 24,
+      text: "Динамика распределения запасов и ресурсов в 2004-2015 гг., тонн"
+    }
+  ],
+  dataProvider: [
+    {
+      category: "2004",
+      "column-1": "6570",
+      "column-2": "5531.8",
+      "column-3": "3959.1",
+      "column-4": "5716.2",
+      "column-5": "2434.8"
+    },
+    {
+      category: "2005",
+      "column-1": "8358",
+      "column-2": "6336",
+      "column-3": "3195",
+      "column-4": "5677.2",
+      "column-5": "2740.5"
+    },
+    {
+      category: "2006",
+      "column-1": "3195",
+      "column-2": "6336",
+      "column-3": "8358",
+      "column-4": "6918",
+      "column-5": "2871"
+    },
+    {
+      category: "2008",
+      "column-1": "5111.6",
+      "column-2": "8757.6",
+      "column-3": "10681.8",
+      "column-4": "7860.7",
+      "column-5": "3339.2"
+    },
+    {
+      category: "2009",
+      "column-1": "4841.7",
+      "column-2": "7415",
+      "column-3": "10128.8",
+      "column-4": "7958.2",
+      "column-5": "3974"
+    },
+    {
+      category: "2010",
+      "column-1": "5165.8",
+      "column-2": "8653.4",
+      "column-3": "9951.8",
+      "column-4": "7982",
+      "column-5": "4217.4"
+    },
+    {
+      category: "2011",
+      "column-1": "4900",
+      "column-2": "9400",
+      "column-3": "2270",
+      "column-4": "8100",
+      "column-5": "4400"
+    },
+    {
+      category: "2012",
+      "column-1": "5219",
+      "column-2": "10062.7",
+      "column-3": "23522",
+      "column-4": "8047.3",
+      "column-5": "4698.1"
+    },
+    {
+      category: "2013",
+      "column-1": "5355",
+      "column-2": "10354",
+      "column-3": "23506",
+      "column-4": "8053.3",
+      "column-5": "4860.2"
+    },
+    {
+      category: "2014",
+      "column-1": "5237.1",
+      "column-2": "10385.3",
+      "column-3": "24430.6",
+      "column-4": "8006.2",
+      "column-5": "5127.7"
+    },
+    {
+      category: "2015",
+      "column-1": "5497.6",
+      "column-2": "10499.8",
+      "column-3": "25247.9",
+      "column-4": "8159.6",
+      "column-5": "5657.8"
+    }
+  ]
+});
+
+AmCharts.makeChart("chartdiv4", {
   type: "serial",
   categoryField: "category",
   columnSpacing: 0,
@@ -1625,6 +1676,13 @@ function modalClose3() {
   $(".modals3").hide();
 }
 
+function modalOpen4() {
+  $(".modals4").show();
+}
+
+function modalClose4() {
+  $(".modals4").hide();
+}
 // function modalCreate(id) {
 //   console.log(id);
 //   var html =
