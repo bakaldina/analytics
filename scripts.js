@@ -403,7 +403,6 @@ AmCharts.makeChart("chartdiv3", {
       valueField: "column-2"
     },
     {
-      balloonColor: "",
       balloonText: "<b>[[title]] </b>в [[category]]: <b>[[value]] тонн</b>",
       columnWidth: 0.85,
       fillAlphas: 1,
@@ -417,7 +416,6 @@ AmCharts.makeChart("chartdiv3", {
       valueField: "column-3"
     },
     {
-      balloonColor: "",
       balloonText: "<b>[[title]] </b>в [[category]]: <b>[[value]] тонн</b>",
       columnWidth: 0.85,
       dashLength: 1,
@@ -743,46 +741,62 @@ AmCharts.makeChart("map", {
         url: "http://www.amcharts.com"
       },
       {
+        // красноярск
         selectable: true,
-        longitude: 93.8855,
-        latitude: 65.4803,
-        label: "43,2",
+        longitude: 90.8855,
+        latitude: 67.4803,
+        label: "76,2",
         labelPosition: "right",
         labelColor: "rgba(255,255,255,0.8)",
         labelRollOverColor: "#ffffff",
         labelFontSize: 20.8
       },
       {
+        // саха
         selectable: true,
         longitude: 124.6047,
         latitude: 65.9476,
-        label: "23,1",
+        label: "27,6",
         labelPosition: "right",
         labelColor: "rgba(255,255,255,0.8)",
         labelRollOverColor: "#ffffff",
         labelFontSize: 18
       },
       {
+        // чукотка
         selectable: true,
         longitude: 169.137,
         latitude: 66.1687,
-        label: "4,6",
+        label: "31,4",
         labelPosition: "right",
         labelColor: "rgba(255,255,255,0.8)",
         labelRollOverColor: "#ffffff",
         labelFontSize: 16.1
       },
       {
+        // камчатка
         selectable: true,
-        longitude: 148.8885,
-        latitude: 62.4153,
-        label: "17,2",
+        longitude: 156.5856,
+        latitude: 55.9815,
+        label: "6,4",
         labelPosition: "right",
         labelColor: "rgba(255,255,255,0.8)",
         labelRollOverColor: "#ffffff",
         labelFontSize: 15
       },
       {
+        // магадан
+        selectable: true,
+        longitude: 148.8885,
+        latitude: 62.4153,
+        label: "34,3",
+        labelPosition: "right",
+        labelColor: "rgba(255,255,255,0.8)",
+        labelRollOverColor: "#ffffff",
+        labelFontSize: 15
+      },
+      {
+        // амур
         selectable: true,
         longitude: 125.6284,
         latitude: 53.1884,
@@ -793,6 +807,7 @@ AmCharts.makeChart("map", {
         labelFontSize: 15
       },
       {
+        // приморье
         selectable: true,
         longitude: 133.155,
         latitude: 45.2158,
@@ -803,16 +818,18 @@ AmCharts.makeChart("map", {
         labelFontSize: 12.2
       },
       {
+        // еврейский ао
         selectable: true,
         longitude: 129.8084,
         latitude: 47.7792,
-        label: "0,1",
+        label: "0,07",
         labelPosition: "right",
         labelColor: "rgba(0,0,0,0.8)",
         labelRollOverColor: "#000000",
         labelFontSize: 13.6
       },
       {
+        // сахалинск
         selectable: true,
         longitude: 140.7578,
         latitude: 48.5875,
@@ -823,96 +840,117 @@ AmCharts.makeChart("map", {
         labelFontSize: 13.3
       },
       {
+        // хабаровск
+        selectable: true,
+        longitude: 134.4632,
+        latitude: 49.9188,
+        label: "25,9",
+        labelPosition: "right",
+        labelColor: "rgba(255,255,255,0.8)",
+        labelRollOverColor: "#ffffff",
+        labelFontSize: 15
+      },
+      {
+        // забайкалье
         selectable: true,
         longitude: 113.0049,
         latitude: 51.2409,
-        label: "8,1",
+        label: "15,2",
         labelPosition: "right",
         labelColor: "rgba(255,255,255,0.8)",
         labelRollOverColor: "#ffffff",
         labelFontSize: 15
       },
       {
+        // бурятия
         selectable: true,
         longitude: 108.9796,
         latitude: 53.6259,
-        label: "6,5",
+        label: "5,4",
         labelPosition: "right",
         labelColor: "rgba(255,255,255,0.8)",
         labelRollOverColor: "#ffffff",
         labelFontSize: 15
       },
       {
+        // иркутск
         selectable: true,
         longitude: 102.1715,
         latitude: 55.3841,
-        label: "17,4",
+        label: "26,9",
         labelPosition: "right",
         labelColor: "rgba(255,255,255,0.8)",
         labelRollOverColor: "#ffffff",
         labelFontSize: 15
       },
       {
+        // тыва
         selectable: true,
         longitude: 91.2145,
         latitude: 50.8598,
-        label: "1,6",
+        label: "3,7",
         labelPosition: "right",
         labelColor: "rgba(255,255,255,0.8)",
         labelRollOverColor: "#ffffff",
         labelFontSize: 15
       },
       {
+        // хакасия
         selectable: true,
-        longitude: 89.2735,
+        longitude: 88.2735,
         latitude: 52.7927,
-        label: "1,2",
+        label: "2,7",
         labelPosition: "right",
         labelColor: "rgba(255,255,255,0.8)",
         labelRollOverColor: "#ffffff",
         labelFontSize: 9.5
       },
       {
+        // республика алтай
         selectable: true,
         longitude: 85.9024,
         latitude: 50.6297,
-        label: "0,6",
+        label: "0,4",
         labelPosition: "right",
         labelColor: "rgba(255,255,255,0.8)",
         labelRollOverColor: "#ffffff",
         labelFontSize: 12
       },
       {
+        // алтайский край
         selectable: true,
         longitude: 80.2651,
         latitude: 52.6604,
-        label: "0,2",
+        label: "1,7",
         labelPosition: "right",
         labelColor: "rgba(255,255,255,0.8)",
         labelRollOverColor: "#ffffff",
         labelFontSize: 15
       },
       {
+        // кемерово
         selectable: true,
         longitude: 85.0351,
         latitude: 54.3898,
-        label: "0,7",
+        label: "1,3",
         labelPosition: "right",
         labelColor: "rgba(255,255,255,0.8)",
         labelRollOverColor: "#ffffff",
         labelFontSize: 12.8
       },
       {
+        // новосиб
         selectable: true,
         longitude: 78.2053,
         latitude: 55.3662,
-        label: "0,3",
+        label: "0,4",
         labelPosition: "right",
         labelColor: "rgba(255,255,255,0.8)",
         labelRollOverColor: "#ffffff",
         labelFontSize: 13.3
       },
       {
+        // ханты-мансийск
         selectable: true,
         longitude: 68.4438,
         latitude: 60.8278,
@@ -923,56 +961,62 @@ AmCharts.makeChart("map", {
         labelFontSize: 15
       },
       {
+        // свердловск
         selectable: true,
         longitude: 59.6672,
         latitude: 58.1557,
-        label: "11,2",
+        label: "7,6",
         labelPosition: "right",
         labelColor: "rgba(255,255,255,0.8)",
         labelRollOverColor: "#ffffff",
         labelFontSize: 15
       },
       {
+        // пермь
         selectable: true,
         longitude: 53.9074,
         latitude: 59.0573,
-        label: "0,02",
+        label: "0,2",
         labelPosition: "right",
         labelColor: "rgba(255,255,255,0.8)",
         labelRollOverColor: "#ffffff",
         labelFontSize: 12.5
       },
       {
+        // башкоторстан
         selectable: true,
         longitude: 55.114,
         latitude: 53.9641,
-        label: "7,1",
+        label: "5,9",
         labelPosition: "right",
         labelColor: "rgba(255,255,255,0.8)",
         labelRollOverColor: "#ffffff",
         labelFontSize: 12
       },
       {
+        // челяб
         selectable: true,
-        longitude: 59.4238,
+        longitude: 58.4238,
         latitude: 54.9235,
-        label: "11,7",
+        label: "19,4",
         labelPosition: "right",
         labelColor: "rgba(255,255,255,0.8)",
         labelRollOverColor: "#ffffff",
-        labelFontSize: 10.3
+        labelFontSize: 9.3
       },
       {
+        // оренбург
         selectable: true,
         longitude: 52.729,
         latitude: 52.0682,
-        label: "8,1",
+        label: "6,6",
         labelPosition: "right",
         labelColor: "rgba(255,255,255,0.8)",
         labelRollOverColor: "#ffffff",
         labelFontSize: 11.1
       },
       {
+        // карачаево-черкес
         selectable: true,
         longitude: 41.4341,
         latitude: 43.1047,
@@ -983,20 +1027,11 @@ AmCharts.makeChart("map", {
         labelFontSize: 10
       },
       {
-        selectable: true,
-        longitude: 43.9446,
-        latitude: 42.1988,
-        label: "0,001",
-        labelPosition: "right",
-        labelColor: "rgba(0,0,0,0.8)",
-        labelRollOverColor: "#000000",
-        labelFontSize: 8.7
-      },
-      {
+        // мурманск
         selectable: true,
         longitude: 31.9143,
         latitude: 67.6657,
-        label: "0,1",
+        label: "0,07",
         labelPosition: "right",
         labelColor: "rgba(255,255,255,0.8)",
         labelRollOverColor: "#ffffff",
@@ -1014,76 +1049,6 @@ AmCharts.makeChart("map", {
       },
       {
         selectable: true,
-        longitude: 134.4632,
-        latitude: 49.9188,
-        label: "17,7",
-        labelPosition: "right",
-        labelColor: "rgba(255,255,255,0.8)",
-        labelRollOverColor: "#ffffff",
-        labelFontSize: 15
-      },
-      {
-        selectable: true,
-        longitude: 297449413782.5486,
-        latitude: 501955659055.0943,
-        label: "Au",
-        labelPosition: "right",
-        labelColor: "rgba(0,0,0,1)",
-        labelRollOverColor: "#000000",
-        labelFontSize: 22.7
-      },
-      {
-        selectable: true,
-        longitude: 165.6171,
-        latitude: 274.3768,
-        label: "Text...",
-        labelPosition: "right",
-        labelColor: "rgba(0,0,0,1)",
-        labelRollOverColor: "rgba(0,0,0,1)",
-        labelFontSize: 15
-      },
-      {
-        selectable: true,
-        longitude: 334969272234754100000,
-        latitude: -453291688572337900000,
-        label: "Au",
-        labelPosition: "right",
-        labelColor: "rgba(0,0,0,0.8)",
-        labelRollOverColor: "#000000",
-        labelFontSize: 24.9
-      },
-      {
-        selectable: true,
-        longitude: -71854111.4001,
-        latitude: 149772714.7698,
-        label: "Au",
-        labelPosition: "right",
-        labelColor: "rgba(0,0,0,0.8)",
-        labelRollOverColor: "#000000",
-        labelFontSize: 24.6
-      },
-      {
-        selectable: true,
-        longitude: 139.1316,
-        latitude: 54.601,
-        label: "2,5",
-        labelPosition: "right",
-        labelColor: "rgba(255,255,255,0.8)",
-        labelRollOverColor: "#ffffff",
-        labelFontSize: 15
-      },
-      {
-        selectable: true,
-        longitude: -2012472212316604,
-        latitude: 30683422358105556,
-        label: "Au",
-        labelPosition: "right",
-        labelColor: "rgba(9,8,8,0.8)",
-        labelRollOverColor: "#0a0909",
-        labelFontSize: 48
-      },
-      {
-        selectable: true,
         longitude: 109.5357,
         latitude: 81.4149,
         label: "Au",
@@ -1091,7 +1056,7 @@ AmCharts.makeChart("map", {
         labelColor: "rgba(9,8,8,0.8)",
         labelRollOverColor: "#0a0909",
         labelFontSize: 26.8
-      },
+      }
       // {
       //   selectable: true,
       //   longitude: 89.9136,
@@ -1111,16 +1076,6 @@ AmCharts.makeChart("map", {
       //   labelRollOverColor: "#ffffff",
       //   labelFontSize: 10.3
       // },
-      {
-        selectable: true,
-        longitude: 156.5856,
-        latitude: 55.9815,
-        label: "2,5",
-        labelPosition: "right",
-        labelColor: "rgba(255,255,255,0.8)",
-        labelRollOverColor: "#ffffff",
-        labelFontSize: 15
-      }
     ],
     areas: [
       {
@@ -1130,12 +1085,12 @@ AmCharts.makeChart("map", {
       },
       {
         id: "RU-ALT",
-        title: "Алтайский край",
+        title: "Алтайский край: <br> <b>1,7 т.</b>",
         color: "rgba(222,157,83,0.8)"
       },
       {
         id: "RU-AMU",
-        title: "Амурская обл.",
+        title: "Амурская обл.: <br> <b>16,4 т.</b>",
         color: "rgba(111,38,38,0.8)"
       },
       {
@@ -1150,7 +1105,7 @@ AmCharts.makeChart("map", {
       },
       {
         id: "RU-BA",
-        title: "Респ. Башкоторстан",
+        title: "Респ. Башкоторстан: <br> <b>5,9 т.</b>",
         color: "rgba(198,19,19,0.8)"
       },
       {
@@ -1165,7 +1120,7 @@ AmCharts.makeChart("map", {
       },
       {
         id: "RU-BU",
-        title: "Респ. Бурятия",
+        title: "Респ. Бурятия: <br> <b>5,4 т.</b>",
         color: "rgba(198,19,19,0.8)"
       },
       {
@@ -1175,13 +1130,13 @@ AmCharts.makeChart("map", {
       },
       {
         id: "RU-CHE",
-        title: "Челябинская обл.",
-        color: "rgba(198,19,19,0.8)"
+        title: "Челябинская обл.: <br> <b>19,4 т.</b>",
+        color: "rgba(111,38,38,0.8)"
       },
       {
         id: "RU-CHU",
-        title: "Чукотский АО",
-        color: "rgba(172,94,5,0.8)"
+        title: "Чукотский АО: <br> <b>31,4 т.</b>",
+        color: "rgba(42,1,1,0.8)"
       },
       {
         id: "RU-CU",
@@ -1195,13 +1150,13 @@ AmCharts.makeChart("map", {
       },
       {
         id: "RU-AL",
-        title: "Респ. Алтай",
+        title: "Респ. Алтай: <br> <b>0,4 т.</b>",
         color: "rgba(222,157,83,0.8)"
       },
       {
         id: "RU-IRK",
-        title: "Иркутская обл.",
-        color: "rgba(111,38,38,0.8)"
+        title: "Иркутская обл.: <br> <b>26,9 т.</b>",
+        color: "rgba(42,1,1,0.8)"
       },
       {
         id: "RU-IVA",
@@ -1215,7 +1170,7 @@ AmCharts.makeChart("map", {
       },
       {
         id: "RU-KC",
-        title: "Карачаево-Черкесская Респ.",
+        title: "Карачаево-Черкесская Респ.: <br> <b>0,5 т.</b>",
         color: "rgba(222,157,83,0.8)"
       },
       {
@@ -1225,7 +1180,7 @@ AmCharts.makeChart("map", {
       },
       {
         id: "RU-KEM",
-        title: "Кемеровская обл.",
+        title: "Кемеровская обл.: <br> <b>1,3 т.</b>",
         color: "rgba(222,157,83,0.8)"
       },
       {
@@ -1235,8 +1190,8 @@ AmCharts.makeChart("map", {
       },
       {
         id: "RU-KHA",
-        title: "Хабаровский край",
-        color: "rgba(111,38,38,0.8)"
+        title: "Хабаровский край: <br> <b>25,9 т.</b>",
+        color: "rgba(42,1,1,0.8)"
       },
       {
         id: "RU-KR",
@@ -1245,7 +1200,7 @@ AmCharts.makeChart("map", {
       },
       {
         id: "RU-KK",
-        title: "Респ. Хакасия",
+        title: "Респ. Хакасия: <br> <b>2,7 т.</b>",
         color: "rgba(172,94,5,0.8)"
       },
       {
@@ -1255,7 +1210,7 @@ AmCharts.makeChart("map", {
       },
       {
         id: "RU-KHM",
-        title: "Ханты-Мансийский АО - Югра",
+        title: "Ханты-Мансийский АО - Югра: <br> <b>0,2 т.</b>",
         color: "rgba(222,157,83,0.8)"
       },
       {
@@ -1270,7 +1225,7 @@ AmCharts.makeChart("map", {
       },
       {
         id: "RU-KAM",
-        title: "Камчатский край",
+        title: "Камчатский край: <br> <b>6,4 т.</b>",
         color: "rgba(172,94,5,0.8)"
       },
       {
@@ -1295,7 +1250,7 @@ AmCharts.makeChart("map", {
       },
       {
         id: "RU-KYA",
-        title: "Красноярский край",
+        title: "Красноярский край: <br> <b>76,2 т.</b>",
         color: "rgba(42,1,1,0.8)"
       },
       {
@@ -1320,12 +1275,12 @@ AmCharts.makeChart("map", {
       },
       {
         id: "RU-MAG",
-        title: "Магаданская обл.",
-        color: "rgba(111,38,38,0.8)"
+        title: "Магаданская обл.: <br> <b>34,3 т.</b>",
+        color: "rgba(42,1,1,0.8)"
       },
       {
         id: "RU-MUR",
-        title: "Мурманская обл.",
+        title: "Мурманская обл.: <br> <b>0,07 т.</b>",
         color: "rgba(222,157,83,0.8)"
       },
       {
@@ -1351,11 +1306,11 @@ AmCharts.makeChart("map", {
       {
         id: "RU-SE",
         title: "Респ. Северная Осетия - Алания",
-        color: "rgba(222,157,83,0.8)"
+        color: "rgba(173,168,168,1)"
       },
       {
         id: "RU-NVS",
-        title: "Новосибирская обл.",
+        title: "Новосибирская обл.: <br> <b>0,4 т.</b>",
         color: "rgba(222,157,83,0.8)"
       },
       {
@@ -1365,7 +1320,7 @@ AmCharts.makeChart("map", {
       },
       {
         id: "RU-ORE",
-        title: "Оренбургская обл.",
+        title: "Оренбургская обл.: <br> <b>6,6 т.</b>",
         color: "rgba(198,19,19,0.8)"
       },
       {
@@ -1380,12 +1335,12 @@ AmCharts.makeChart("map", {
       },
       {
         id: "RU-PER",
-        title: "Пермский край",
+        title: "Пермский край: <br> <b>0,2 т.</b>",
         color: "rgba(222,157,83,0.8)"
       },
       {
         id: "RU-PRI",
-        title: "Приморский край",
+        title: "Приморский край: <br> <b>0,4 т.</b>",
         color: "rgba(222,157,83,0.8)"
       },
       {
@@ -1415,12 +1370,12 @@ AmCharts.makeChart("map", {
       },
       {
         id: "RU-SA",
-        title: "Респ. Саха (Якутия)",
+        title: "Респ. Саха (Якутия): <br> <b>27,6 т.</b>",
         color: "rgba(42,1,1,0.8)"
       },
       {
         id: "RU-SAK",
-        title: "Сахалинская обл.",
+        title: "Сахалинская обл.: <br> <b>0,2 т.</b>",
         color: "rgba(222,157,83,0.8)"
       },
       {
@@ -1445,7 +1400,7 @@ AmCharts.makeChart("map", {
       },
       {
         id: "RU-SVE",
-        title: "Свердловская обл.",
+        title: "Свердловская обл.: <br> <b>7,6 т.</b>",
         color: "rgba(198,19,19,0.8)"
       },
       {
@@ -1470,7 +1425,7 @@ AmCharts.makeChart("map", {
       },
       {
         id: "RU-TY",
-        title: "Респ. Тыва",
+        title: "Респ. Тыва: <br> <b>3,7 т.</b>",
         color: "rgba(172,94,5,0.8)"
       },
       {
@@ -1525,13 +1480,13 @@ AmCharts.makeChart("map", {
       },
       {
         id: "RU-YEV",
-        title: "Еврейская АО",
+        title: "Еврейская АО: <br> <b>0,07 т.</b>",
         color: "rgba(222,157,83,0.8)"
       },
       {
         id: "RU-ZAB",
-        title: "Забайкальский край",
-        color: "rgba(198,19,19,0.8)"
+        title: "Забайкальский край: <br> <b>15,2 т.</b>",
+        color: "rgba(111,38,38,0.8)"
       }
     ]
     // lines: [
@@ -1558,6 +1513,19 @@ AmCharts.makeChart("map", {
     //     arrowSize: 12.600000000000001
     //   }
     // ]
+  },
+  titles: [
+    {
+      id: "Title-map",
+      size: 24,
+      autoMargins: 10,
+      text: "Распределение добычи по субъектам РФ в 2016г., тонн"
+    }
+  ],
+  legend: {
+    enabled: true,
+    useGraphSettings: true,
+    fontSize: 14
   },
   balloon: {
     horizontalPadding: 15,
