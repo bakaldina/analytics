@@ -17,6 +17,11 @@
     <link rel="stylesheet" href="https://www.amcharts.com/lib/3/plugins/export/export.css" type="text/css" media="all" />
     <script src="https://www.amcharts.com/lib/3/themes/light.js"></script>
     <script type="text/javascript" src="scripts.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
+    <link rel='stylesheet prefetch' href='https://ajax.googleapis.com/ajax/libs/jqueryui/1/themes/ui-darkness/jquery-ui.css'>
+    <link rel="stylesheet" href="css/style.css">
+    <script src='https://code.jquery.com/jquery-2.2.4.min.js'></script>
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.11.4/jquery-ui.min.js'></script>
 </head>
 
 <body>
@@ -122,7 +127,7 @@
         <h4>Раздел в разработке и наполняется данными</h4>
         <h1>Аналитика</h1>
     </header>
-    <div class="menu wraper">
+    <!-- <div class="menu wraper">
         <ul>
             <li>
                 <button class="button button-1 active">Месторождения</button>
@@ -235,7 +240,7 @@
                 </div>
             </div>
         </section>
-    </main>
+    </main> -->
 
     <div class="modals">
         <div class="modals__overlay" onclick="modalClose()">
@@ -279,7 +284,213 @@
             <div id="chartdiv5" style="width: 100%; height: 700px; background-color: #FFFFFF;"></div>
         </div>
     </div>
+    <div class="modals6">
+        <div class="modals6__overlay" onclick="modalClose6()">
+        </div>
+        <div class="modals6__content">
+            <div id="chartdiv6" style="width: 100%; height: 700px; background-color: #FFFFFF;"></div>
+        </div>
+    </div>
+    <div id="parent">
+        <ul>
+            <li>
+                <a href="#parent-1">Месторождения</a>
+            </li>
+            <li>
+                <a href="#parent-2">Лицензии</a>
+            </li>
+            <li>
+                <a href="#parent-3">Бизнес</a>
+            </li>
+        </ul>
+        <div id="parent-1">
+            <div id="child">
+                <ul>
+                    <li>
+                        <a href="#child-1">Общие сведения
+                            <br> (по всем видам
+                            <br> ископаемых)</a>
+                    </li>
+                    <li>
+                        <a href="#child-2">Золото</a>
+                    </li>
+                    <li>
+                        <a href="#child-3">Нефть и конденсат</a>
+                    </li>
+                    <li>
+                        <a href="#child-4">Железные руды</a>
+                    </li>
+                    <li>
+                        <a href="#child-5">Медь</a>
+                    </li>
+                </ul>
+                <div id="child-1">
+                    <h3 style="margin-left: 30px;">В разработке</h3>
+                </div>
+                <div id="child-2">
+                    <section class="content">
+                        <div class="row">
+                            <h2>Популярная статистика по золоту, всего по России</h2>
+                            <div class="row__container1">
+                                <div class="row__container1_item1">
+                                    <h3>Количество месторождений</h3>
+                                    <p class="main-value">5894</p>
+                                    <p class="bottom-value"></p>
+                                </div>
+                                <div class="row__container1_item1">
+                                    <h3>Запасы</h3>
+                                    <p class="main-value">13817,4</p>
+                                    <p class="bottom-value">тонн</p>
+                                    <p class="bottom-value">A+B+C
+                                        <sub>1</sub>+C
+                                        <sub>2</sub>
+                                    </p>
+                                </div>
+                                <div class="row__container1_item1">
+                                    <h3>Добыча за 2016г.</h3>
+                                    <p class="main-value">286,6</p>
+                                    <p class="bottom-value">тонн</p>
+                                </div>
+                                <div class="row__container1_item1">
+                                    <h3>Цена</h3>
+                                    <iframe style="width:265px;border:0;overflow:hidden;background-color:transparent;height:169px" scrolling="no" src="https://fortrader.org/informers/getInformer?st=25&cat=19&mult=0.99&showGetBtn=0&w=265&hideDiff=1&colors=false&items=1"></iframe>
+                                </div>
+                            </div>
 
+                            <h2>Статистика по запасам</h2>
+
+                            <div class="row__container2">
+                                <div class="row__container2_item2">
+                                    <h3>Динамика запасов в 1991–2015 гг., %</h3>
+                                    <img src="image/au_chart-1.png" onclick="modalOpen()" alt="Динамика запасов золота категорий А+В+С.">
+                                </div>
+                                <div class="row__container2_item2">
+                                    <h3>Динамика добычи и прироста запасов в 1991-2015 гг., тонн</h3>
+                                    <img src="image/au_chart-2.png" onclick="modalOpen1()" alt="Динамика добычи золота и прироста его запасов категорий А+В+С">
+                                </div>
+                                <div class="row__container2_item2">
+                                    <h3>Динамика распределения запасов и ресурсов в 2004-2015 гг., тонн</h3>
+                                    <img src="image/au_chart-3.png" onclick="modalOpen3()" alt="Динамика распределения запасов и ресурсов">
+                                </div>
+                                <div class="row__container2_item2">
+                                    <h3>Динамика движения запасов в 1993–2015 гг., тонн</h3>
+                                    <img src="image/au_chart-4.png" onclick="modalOpen2()" alt="Динамика движения запасов золота в 2006–2015 гг">
+                                </div>
+                            </div>
+
+                            <h2>Статистика по добыче</h2>
+
+                            <div class="row__container2">
+                                <div class="row__container2_item2">
+                                    <h3>Распределение добычи по субъектам РФ в 2016г., тонн</h3>
+                                    <img src="image/au_chart-5.png" onclick="modalOpen4()" alt="Распределение добычи по субъектам Р.">
+                                </div>
+                                <div class="row__container2_item2">
+                                    <h3>Динамика добычи и экспорта в 2002-2015 гг., тонн</h3>
+                                    <img src="image/au_chart-6.png" onclick="modalOpen5()" alt="Динамика добычи и экспорта в 2002-2015 гг">
+                                </div>
+                                <div class="row__container2_item2">
+                                    <h3>Сведения о распределении  запасов золота по основным типам месторождений в 2016г, тонн</h3>
+                                    <img src="image/au_chart-7.png" onclick="modalOpen6()" alt="Распределение добычи по субъектам РФ">
+                                </div>
+                                <div class="row__container2_item2">
+                                    <h3>Динамика движения запасов в 1993–2015 гг., тонн</h3>
+                                    <img class="grey" src="image/au_chart-4.png" alt="Динамика движения запасов золота в 2006–2015 гг">
+                                </div>
+                            </div>
+
+                            <h2>Структура сырьевой базы</h2>
+                        </div>
+                    </section>
+                </div>
+                <div id="child-3">
+                    <h3 style="margin-left: 30px;">В разработке</h3>
+                </div>
+                <div id="child-4">
+                    <h3 style="margin-left: 30px;">В разработке</h3>
+                </div>
+                <div id="child-5">
+                    <h3 style="margin-left: 30px;">В разработке</h3>
+                </div>
+            </div>
+        </div>
+        <div id="parent-2">
+            <div id="child">
+                <ul>
+                    <li>
+                        <a href="#child-1">Общие сведения
+                            <br> (по всем видам
+                            <br> ископаемых)</a>
+                    </li>
+                    <li>
+                        <a href="#child-2">Золото</a>
+                    </li>
+                    <li>
+                        <a href="#child-3">Нефть и конденсат</a>
+                    </li>
+                    <li>
+                        <a href="#child-4">Железные руды</a>
+                    </li>
+                    <li>
+                        <a href="#child-5">Медь</a>
+                    </li>
+                </ul>
+                <div id="child-1">
+                    <h3 style="margin-left: 30px;">В разработке</h3>
+                </div>
+                <div id="child-2">
+                    <h3 style="margin-left: 30px;">В разработке</h3>
+                </div>
+                <div id="child-3">
+                    <h3 style="margin-left: 30px;">В разработке</h3>
+                </div>
+                <div id="child-4">
+                    <h3 style="margin-left: 30px;">В разработке</h3>
+                </div>
+                <div id="child-5">
+                    <h3 style="margin-left: 30px;">В разработке</h3>
+                </div>
+            </div>
+        </div>
+        <div id="parent-3">
+            <div id="child">
+                <ul>
+                    <li>
+                        <a href="#child-1">Общие сведения
+                            <br> (по всем видам
+                            <br> ископаемых)</a>
+                    </li>
+                    <li>
+                        <a href="#child-2">Золото</a>
+                    </li>
+                    <li>
+                        <a href="#child-3">Нефть и конденсат</a>
+                    </li>
+                    <li>
+                        <a href="#child-4">Железные руды</a>
+                    </li>
+                    <li>
+                        <a href="#child-5">Медь</a>
+                    </li>
+                </ul>
+                <div id="child-1">
+                    <h3 style="margin-left: 30px;">В разработке</h3>
+                </div>
+                <div id="child-2">
+                    <h3 style="margin-left: 30px;">В разработке</h3>
+                </div>
+                <div id="child-3">
+                    <h3 style="margin-left: 30px;">В разработке</h3>
+                </div>
+                <div id="child-4">
+                    <h3 style="margin-left: 30px;">В разработке</h3>
+                </div>
+                <div id="child-5">
+                    <h3 style="margin-left: 30px;">В разработке</h3>
+                </div>
+            </div>
+        </div>
+    </div>
     <footer class="footer">
         <div class="footer__item">
             <div class="footer__item_column">
@@ -341,6 +552,8 @@
             </div>
         </div>
     </footer>
+
+
 
     <footer class="footer-mobile">
         <div class="footer-mobile__item">

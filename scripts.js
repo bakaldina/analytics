@@ -1742,6 +1742,167 @@ AmCharts.makeChart("chartdiv5", {
     enabled: true
   }
 });
+
+AmCharts.makeChart("chartdiv6", {
+  type: "serial",
+  categoryField: "category",
+  columnSpacing3D: 1,
+  columnWidth: 0,
+  fontSize: 15,
+  zoomOutButtonRollOverAlpha: 0,
+  startDuration: 1,
+  theme: "light",
+  categoryAxis: {
+    gridPosition: "start"
+  },
+  trendLines: [],
+  graphs: [
+    {
+      accessibleLabel: "[[value]]",
+      balloonText: "[[category]] [[title]]: <b>[[value]] тонн</b>",
+      columnWidth: 0.85,
+      fillAlphas: 1,
+      id: "AmGraph-1",
+      labelText: "[[value]]",
+      lineThickness: 0,
+      maxBulletSize: 49,
+      title: "Рудные собственные",
+      type: "column",
+      valueField: "column-1"
+    },
+    {
+      balloonText: "[[category]] [[title]]: <b>[[value]] тонн</b>",
+      columnWidth: 0.85,
+      fillAlphas: 1,
+      id: "AmGraph-2",
+      labelText: "[[value]]",
+      lineThickness: 0,
+      maxBulletSize: 49,
+      title: "Рудные комплексные",
+      type: "column",
+      valueField: "column-2"
+    },
+    {
+      balloonText: "[[category]] [[title]]: <b>[[value]] тонн</b>",
+      columnWidth: 0.85,
+      fillAlphas: 1,
+      fillColors: "#92C992",
+      id: "AmGraph-3",
+      labelText: "[[value]]",
+      lineAlpha: 0,
+      title: "Россыпные открытые",
+      type: "column",
+      valueField: "column-3"
+    },
+    {
+      balloonText: "[[category]] [[title]]: <b>[[value]] тонн</b>",
+      bulletBorderThickness: 3,
+      color: "#000000",
+      columnWidth: 0.85,
+      dashLength: 1,
+      fillAlphas: 1,
+      fillColors: "#CFCFF4",
+      id: "AmGraph-4",
+      labelText: "[[value]]",
+      lineAlpha: 0,
+      lineColor: "",
+      minDistance: 0,
+      negativeLineAlpha: 0,
+      title: "Россыпные подземные",
+      type: "column",
+      valueField: "column-4"
+    },
+    {
+      balloonText: "[[category]] [[title]]: <b>[[value]] тонн</b>",
+      columnWidth: 0.85,
+      fillAlphas: 1,
+      fillColors: "#D290E7",
+      id: "AmGraph-5",
+      labelText: "[[value]]",
+      maxBulletSize: 49,
+      title: "Россыпные дражные",
+      type: "column",
+      valueField: "column-5"
+    },
+    {
+      balloonText: "[[category]] [[title]]: <b>[[value]] тонн</b>",
+      columnWidth: 0.85,
+      fillAlphas: 1,
+      fillColors: "#FFFF64",
+      id: "AmGraph-6",
+      labelText: "[[value]]",
+      lineThickness: 0,
+      tabIndex: 0,
+      title: "Россыпные гидравлические",
+      type: "column",
+      valueField: "column-6"
+    }
+  ],
+  guides: [],
+  valueAxes: [
+    {
+      id: "ValueAxis-1",
+      stackType: "100%",
+      title: "кол-во, тонны",
+      titleFontSize: 17
+    }
+  ],
+  allLabels: [],
+  balloon: {
+    fontSize: 14
+  },
+  legend: {
+    enabled: true,
+    fontSize: 13,
+    useGraphSettings: true
+  },
+  titles: [
+    {
+      id: "Title-1",
+      size: 15,
+      text:
+        "Сведения о распределении  запасов и добычи золота по основным типам месторождений в 2016г, тонн"
+    }
+  ],
+  dataProvider: [
+    {
+      category: "Кол-во месторождений",
+      "column-1": "391",
+      "column-2": "173",
+      "column-3": "4177",
+      "column-4": "365",
+      "column-5": "230",
+      "column-6": "559"
+    },
+    {
+      category: "Запасы ABC1",
+      "column-1": "5508897",
+      "column-2": "2050078",
+      "column-3": "623598",
+      "column-4": "131887",
+      "column-5": "200908",
+      "column-6": "72967"
+    },
+    {
+      category: "Запасы С2",
+      "column-1": "4271810",
+      "column-2": "1539294",
+      "column-3": "114449",
+      "column-4": "14736",
+      "column-5": "12847",
+      "column-6": "17733"
+    },
+    {
+      category: "Добыча",
+      "column-1": "209898",
+      "column-2": "40103",
+      "column-3": "61915",
+      "column-4": "1301",
+      "column-5": "7284",
+      "column-6": "4333"
+    }
+  ]
+});
 $(document).ready(function() {
   var $button1 = document.querySelector(".button-1"),
     $container1 = document.querySelector(".container-1"),
@@ -1826,6 +1987,13 @@ function modalOpen5() {
 function modalClose5() {
   $(".modals5").hide();
 }
+function modalOpen6() {
+  $(".modals6").show();
+}
+
+function modalClose6() {
+  $(".modals6").hide();
+}
 // function modalCreate(id) {
 //   console.log(id);
 //   var html =
@@ -1836,3 +2004,12 @@ function modalClose5() {
 //   $(".modals").show();
 //   m_chartdiv()();
 // }
+$(function() {
+  $("#parent").tabs();
+  $("#child, #child, #child, #child, #child, #child")
+    .tabs()
+    .addClass("ui-tabs-vertical ui-helper-clearfix");
+  $("#child li")
+    .removeClass("ui-corner-top")
+    .addClass("ui-corner-left");
+});
