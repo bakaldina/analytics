@@ -167,6 +167,7 @@ AmCharts.makeChart("chartdiv2", {
   theme: "light",
   startDuration: 1,
   fontSize: 16,
+  colors: ["#67b7dc", "#fdd400"],
   categoryAxis: {
     gridPosition: "start"
   },
@@ -330,6 +331,7 @@ AmCharts.makeChart("chartdiv2", {
       lineAlpha: 0.3,
       title: "Объем приращенных запасов золота (ABC1) в тоннах",
       type: "column",
+      labelText: "[[value]]",
       valueField: "income",
       dashLengthField: "dashLengthColumn"
     },
@@ -371,6 +373,7 @@ AmCharts.makeChart("chartdiv3", {
   columnWidth: 0,
   zoomOutButtonRollOverAlpha: 0,
   startDuration: 1,
+  colors: ["#67b7dc", "#fdd400"],
   theme: "light",
   categoryAxis: {
     gridPosition: "start"
@@ -385,6 +388,7 @@ AmCharts.makeChart("chartdiv3", {
       lineThickness: 0,
       title: "категория P1",
       fontSize: 14,
+      labelText: "[[value]]",
       type: "column",
       valueField: "column-1"
     },
@@ -396,6 +400,7 @@ AmCharts.makeChart("chartdiv3", {
       fillAlphas: 1,
       gradientOrientation: "horizontal",
       id: "AmGraph-2",
+      labelText: "[[value]]",
       lineThickness: 0,
       title: "категория P2",
       fontSize: 14,
@@ -408,6 +413,7 @@ AmCharts.makeChart("chartdiv3", {
       fillAlphas: 1,
       fillColors: "#92C992",
       id: "AmGraph-3",
+      labelText: "[[value]]",
       lineAlpha: 0,
       lineThickness: 0,
       title: "категория P3",
@@ -429,6 +435,7 @@ AmCharts.makeChart("chartdiv3", {
       title: "категория ABC1",
       fontSize: 14,
       type: "column",
+      labelText: "[[value]]",
       valueField: "column-4"
     },
     {
@@ -440,6 +447,7 @@ AmCharts.makeChart("chartdiv3", {
       id: "AmGraph-5",
       fontSize: 14,
       lineThickness: 0,
+      labelText: "[[value]]",
       title: "категория C2",
       type: "column",
       valueField: "column-5"
@@ -568,6 +576,7 @@ AmCharts.makeChart("chartdiv4", {
   columnSpacing: 0,
   startDuration: 1,
   fontSize: 16,
+  colors: ["#67b7dc", "#fdd400"],
   theme: "light",
   categoryAxis: {
     gridPosition: "start"
@@ -1580,6 +1589,7 @@ AmCharts.makeChart("chartdiv5", {
   categoryField: "category",
   theme: "light",
   startDuration: 1,
+  colors: ["#67b7dc", "#fdd400"],
   fontSize: 16,
   categoryAxis: {
     gridPosition: "start"
@@ -1697,6 +1707,7 @@ AmCharts.makeChart("chartdiv5", {
       fillAlphas: 0.8,
       lineAlpha: 0.3,
       title: "Объем добычи в тоннах",
+      labelText: "[[value]]",
       type: "column",
       valueField: "expenses",
       dashLengthField: "dashLengthColumn"
