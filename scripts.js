@@ -1759,7 +1759,7 @@ AmCharts.makeChart("chartdiv6", {
   graphs: [
     {
       accessibleLabel: "[[value]]",
-      balloonText: "[[category]] [[title]]: <b>[[value]] тонн</b>",
+      balloonText: "[[category]] [[title]]: <b>[[value]] кг</b>",
       columnWidth: 0.85,
       fillAlphas: 1,
       id: "AmGraph-1",
@@ -1771,7 +1771,7 @@ AmCharts.makeChart("chartdiv6", {
       valueField: "column-1"
     },
     {
-      balloonText: "[[category]] [[title]]: <b>[[value]] тонн</b>",
+      balloonText: "[[category]] [[title]]: <b>[[value]] кг</b>",
       columnWidth: 0.85,
       fillAlphas: 1,
       id: "AmGraph-2",
@@ -1783,7 +1783,7 @@ AmCharts.makeChart("chartdiv6", {
       valueField: "column-2"
     },
     {
-      balloonText: "[[category]] [[title]]: <b>[[value]] тонн</b>",
+      balloonText: "[[category]] [[title]]: <b>[[value]] кг</b>",
       columnWidth: 0.85,
       fillAlphas: 1,
       fillColors: "#92C992",
@@ -1795,7 +1795,7 @@ AmCharts.makeChart("chartdiv6", {
       valueField: "column-3"
     },
     {
-      balloonText: "[[category]] [[title]]: <b>[[value]] тонн</b>",
+      balloonText: "[[category]] [[title]]: <b>[[value]] кг</b>",
       bulletBorderThickness: 3,
       color: "#000000",
       columnWidth: 0.85,
@@ -1813,7 +1813,7 @@ AmCharts.makeChart("chartdiv6", {
       valueField: "column-4"
     },
     {
-      balloonText: "[[category]] [[title]]: <b>[[value]] тонн</b>",
+      balloonText: "[[category]] [[title]]: <b>[[value]] кг</b>",
       columnWidth: 0.85,
       fillAlphas: 1,
       fillColors: "#D290E7",
@@ -1825,7 +1825,7 @@ AmCharts.makeChart("chartdiv6", {
       valueField: "column-5"
     },
     {
-      balloonText: "[[category]] [[title]]: <b>[[value]] тонн</b>",
+      balloonText: "[[category]] [[title]]: <b>[[value]] кг</b>",
       columnWidth: 0.85,
       fillAlphas: 1,
       fillColors: "#FFFF64",
@@ -1843,7 +1843,7 @@ AmCharts.makeChart("chartdiv6", {
     {
       id: "ValueAxis-1",
       stackType: "100%",
-      title: "кол-во, тонны",
+      title: "кол-во, кг",
       titleFontSize: 17
     }
   ],
@@ -1861,7 +1861,7 @@ AmCharts.makeChart("chartdiv6", {
       id: "Title-1",
       size: 15,
       text:
-        "Сведения о распределении  запасов и добычи золота по основным типам месторождений в 2016г, тонн"
+        "Сведения о распределении  запасов и добычи золота по основным типам месторождений в 2016г, кг"
     }
   ],
   dataProvider: [
