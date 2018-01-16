@@ -1773,7 +1773,7 @@ AmCharts.makeChart("chartdiv6", {
       labelText: "[[value]]",
       lineThickness: 0,
       maxBulletSize: 49,
-      title: "Рудные собственные",
+      title: "Рудные, собственно золотые",
       type: "column",
       valueField: "column-1"
     },
