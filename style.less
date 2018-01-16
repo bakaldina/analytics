@@ -363,7 +363,8 @@ h4 {
 .modals3,
 .modals4,
 .modals5,
-.modals6 {
+.modals6,
+.modals7 {
   display: none;
   position: fixed;
   width: 1200px;
@@ -377,7 +378,8 @@ h4 {
 .modals3__content,
 .modals4__content,
 .modals5__content,
-.modals6__content {
+.modals6__content,
+.modals7__content {
   transform: translate(-50%, -50%);
   z-index: 2;
   position: relative;
@@ -388,7 +390,8 @@ h4 {
 .modals3__overlay,
 .modals4__overlay,
 .modals5__overlay,
-.modals6__overlay {
+.modals6__overlay,
+.modals7__overlay {
   z-index: 1;
   width: 100%;
   height: 100%;
@@ -399,6 +402,11 @@ h4 {
 }
 .grey {
   filter: grayscale(1);
+}
+.nav {
+  display: flex;
+  justify-content: space-between;
+  text-transform: uppercase;
 }
 .amcharts-map-image {
   display: none;
@@ -545,6 +553,10 @@ div#child {
   margin: 0 !important;
   padding-right: 0 !important;
   border-right-width: 0 !important;
+}
+.sidebar {
+  position: sticky;
+  top: 0;
 }
 .footer {
   height: 270px;

@@ -4,6 +4,7 @@ AmCharts.makeChart("chartdiv1", {
   columnWidth: 0.84,
   colors: ["#67b7dc", "#fdd400"],
   startDuration: 1,
+  thousandsSeparator: " ",
   startEffect: "bounce",
   fontSize: 16,
   theme: "light",
@@ -165,6 +166,7 @@ AmCharts.makeChart("chartdiv2", {
   type: "serial",
   categoryField: "category",
   theme: "light",
+  thousandsSeparator: " ",
   startDuration: 1,
   fontSize: 16,
   colors: ["#67b7dc", "#fdd400"],
@@ -371,6 +373,7 @@ AmCharts.makeChart("chartdiv3", {
   categoryField: "category",
   columnSpacing3D: 1,
   columnWidth: 0,
+  thousandsSeparator: " ",
   zoomOutButtonRollOverAlpha: 0,
   startDuration: 1,
   colors: ["#67b7dc", "#fdd400"],
@@ -574,6 +577,7 @@ AmCharts.makeChart("chartdiv4", {
   type: "serial",
   categoryField: "category",
   columnSpacing: 0,
+  thousandsSeparator: " ",
   startDuration: 1,
   fontSize: 16,
   colors: ["#67b7dc", "#fdd400"],
@@ -732,6 +736,7 @@ AmCharts.makeChart("map", {
   pathToImages: "http://www.amcharts.com/lib/3/images/",
   addClassNames: true,
   fontSize: 15,
+  thousandsSeparator: " ",
   color: "#000000",
   projection: "mercator",
   backgroundAlpha: 1,
@@ -1589,6 +1594,7 @@ AmCharts.makeChart("chartdiv5", {
   categoryField: "category",
   theme: "light",
   startDuration: 1,
+  thousandsSeparator: " ",
   colors: ["#67b7dc", "#fdd400"],
   fontSize: 16,
   categoryAxis: {
@@ -1748,6 +1754,7 @@ AmCharts.makeChart("chartdiv6", {
   categoryField: "category",
   columnSpacing3D: 1,
   columnWidth: 0,
+  thousandsSeparator: " ",
   fontSize: 15,
   zoomOutButtonRollOverAlpha: 0,
   startDuration: 1,
@@ -1903,6 +1910,286 @@ AmCharts.makeChart("chartdiv6", {
     }
   ]
 });
+
+AmCharts.makeChart("chartdiv7", {
+  type: "serial",
+  categoryField: "category",
+  columnSpacing3D: 1,
+  columnWidth: 0,
+  zoomOutButtonRollOverAlpha: 0,
+  startDuration: 1,
+  fontSize: 15,
+  thousandsSeparator: " ",
+  theme: "light",
+  categoryAxis: {
+    gridPosition: "start"
+  },
+  trendLines: [],
+  graphs: [
+    {
+      accessibleLabel: "[[value]]",
+      balloonText: "[[category]] [[title]]: <b>[[value]] тонн</b>",
+      columnWidth: 0.85,
+      fillAlphas: 1,
+      id: "AmGraph-1",
+      labelText: "[[value]]",
+      lineThickness: 0,
+      maxBulletSize: 49,
+      title: "Золотые",
+      type: "column",
+      valueField: "column-1"
+    },
+    {
+      balloonText: "[[category]] [[title]]: <b>[[value]] тонн</b>",
+      bulletHitAreaSize: 2,
+      bulletSize: 6,
+      columnWidth: 0.85,
+      cornerRadiusTop: 2,
+      cursorBulletAlpha: 0,
+      dashLength: 1,
+      fillAlphas: 1,
+      gradientOrientation: "horizontal",
+      id: "AmGraph-2",
+      labelText: "[[value]]",
+      title: "Золото-сульфидные",
+      type: "column",
+      valueField: "column-2"
+    },
+    {
+      balloonText: "[[category]] [[title]]: <b>[[value]] тонн</b>",
+      columnWidth: 0.85,
+      fillAlphas: 1,
+      fillColors: "#92C992",
+      id: "AmGraph-3",
+      labelText: "[[value]]",
+      lineAlpha: 0,
+      title: "Золото-сульфидные-кварцевые",
+      type: "column",
+      valueField: "column-3"
+    },
+    {
+      balloonText: "[[category]] [[title]]: <b>[[value]] тонн</b>",
+      bulletBorderThickness: 3,
+      color: "#000000",
+      columnWidth: 0.85,
+      dashLength: 1,
+      fillAlphas: 1,
+      fillColors: "#CFCFF4",
+      id: "AmGraph-4",
+      labelText: "[[value]]",
+      lineAlpha: 0,
+      lineColor: "",
+      minDistance: 0,
+      negativeLineAlpha: 0,
+      title: "Золото-серебряно-баритовые",
+      type: "column",
+      valueField: "column-4"
+    },
+    {
+      balloonText: "[[category]] [[title]]: <b>[[value]] тонн</b>",
+      columnWidth: 0.85,
+      fillAlphas: 1,
+      fillColors: "#D290E7",
+      id: "AmGraph-5",
+      labelText: "[[value]]",
+      maxBulletSize: 49,
+      title: "Серебряно-золотые",
+      type: "column",
+      valueField: "column-5"
+    },
+    {
+      balloonText: "[[category]] [[title]]: <b>[[value]] тонн</b>",
+      columnWidth: 0.85,
+      fillAlphas: 1,
+      fillColors: "#FFFF64",
+      id: "AmGraph-6",
+      labelText: "[[value]]",
+      lineThickness: 0,
+      tabIndex: 0,
+      title: "Золото-кварцевые",
+      type: "column",
+      valueField: "column-6"
+    },
+    {
+      balloonText: "[[category]] [[title]]: <b>[[value]] тонн</b>",
+      columnWidth: 0.85,
+      fillAlphas: 1,
+      id: "AmGraph-7",
+      labelText: "[[value]]",
+      title: "Золото-колчеданные",
+      type: "column",
+      valueField: "column-7"
+    },
+    {
+      balloonText: "[[category]] [[title]]: <b>[[value]] тонн</b>",
+      columnWidth: 0.85,
+      fillAlphas: 1,
+      id: "AmGraph-8",
+      labelText: "[[value]]",
+      title: "Золото-серебряные",
+      type: "column",
+      valueField: "column-8"
+    },
+    {
+      balloonText: "[[category]] [[title]]: <b>[[value]] тонн</b>",
+      columnWidth: 0.85,
+      fillAlphas: 1,
+      id: "AmGraph-9",
+      labelText: "[[value]]",
+      title: "Золото-сурьмяные",
+      type: "column",
+      valueField: "column-9"
+    },
+    {
+      balloonText: "[[category]] [[title]]: <b>[[value]] тонн</b>",
+      columnWidth: 0.85,
+      fillAlphas: 1,
+      id: "AmGraph-10",
+      title: "Медно-золоторудные",
+      type: "column",
+      labelText: "[[value]]",
+      valueField: "column-10"
+    },
+    {
+      balloonText: "[[category]] [[title]]: <b>[[value]] тонн</b>",
+      columnWidth: 0.85,
+      fillAlphas: 1,
+      id: "AmGraph-11",
+      labelText: "[[value]]",
+      title: "Полиметально-золотые",
+      type: "column",
+      valueField: "column-11"
+    },
+    {
+      balloonText: "[[category]] [[title]]: <b>[[value]] тонн</b>",
+      columnWidth: 0.85,
+      fillAlphas: 1,
+      id: "AmGraph-12",
+      title: "Золото-скрановые",
+      type: "column",
+      labelText: "[[value]]",
+      valueField: "column-12"
+    },
+    {
+      balloonText: "[[category]] [[title]]: <b>[[value]] тонн</b>",
+      columnWidth: 0.85,
+      fillAlphas: 1,
+      id: "AmGraph-13",
+      title: "Золотосодержащие бурые железняки",
+      type: "column",
+      labelText: "[[value]]",
+      valueField: "column-13"
+    },
+    {
+      balloonText: "[[category]] [[title]]: <b>[[value]] тонн</b>",
+      columnWidth: 0.85,
+      fillAlphas: 1,
+      fillColors: "#008000",
+      id: "AmGraph-14",
+      lineAlpha: 0,
+      labelText: "[[value]]",
+      title: "Золото-колчеданные, окисленные",
+      type: "column",
+      valueField: "column-14"
+    }
+  ],
+  guides: [],
+  valueAxes: [
+    {
+      id: "ValueAxis-1",
+      stackType: "100%",
+      title: "кол-во, тонн",
+      titleFontSize: 17
+    }
+  ],
+  allLabels: [],
+  balloon: {
+    fontSize: 14
+  },
+  legend: {
+    enabled: true,
+    fontSize: 10,
+    useGraphSettings: true
+  },
+  titles: [
+    {
+      id: "Title-1",
+      size: 16,
+      text:
+        "Распределение добычи по основным типам рудных месторождений в 2016 году, тонн"
+    }
+  ],
+  dataProvider: [
+    {
+      category: "Кол-во месторождений",
+      "column-1": "264",
+      "column-2": "34",
+      "column-3": "3",
+      "column-4": "0",
+      "column-5": "47",
+      "column-6": "24",
+      "column-7": "3",
+      "column-8": "3",
+      "column-9": "1",
+      "column-10": "1",
+      "column-11": "4",
+      "column-12": "2",
+      "column-13": "0",
+      "column-14": "5"
+    },
+    {
+      category: "Запасы ABC1",
+      "column-1": "4876.6",
+      "column-2": "152.6",
+      "column-3": "0.6",
+      "column-4": "3.3",
+      "column-5": "303.8",
+      "column-6": "69",
+      "column-7": "9.5",
+      "column-8": "43.9",
+      "column-9": "0",
+      "column-10": "0",
+      "column-11": "46.3",
+      "column-12": "2",
+      "column-13": "0.009",
+      "column-14": "1.5"
+    },
+    {
+      category: "Запасы С2",
+      "column-1": "2963.1",
+      "column-2": "309",
+      "column-3": "4.1",
+      "column-4": "1.9",
+      "column-5": "695.3",
+      "column-6": "195.6",
+      "column-7": "15.2",
+      "column-8": "14.3",
+      "column-9": "4.6",
+      "column-10": "31",
+      "column-11": "30.6",
+      "column-12": "0.6",
+      "column-13": "0.006",
+      "column-14": "6.6"
+    },
+    {
+      category: "Добыча",
+      "column-1": "128.3",
+      "column-2": "14.1",
+      "column-3": "0",
+      "column-4": "0",
+      "column-5": "56.4",
+      "column-6": "8.5",
+      "column-7": "0.01",
+      "column-8": "0.05",
+      "column-9": "0",
+      "column-10": "0",
+      "column-11": "2",
+      "column-12": "0.6",
+      "column-13": "0",
+      "column-14": "0"
+    }
+  ]
+});
 $(document).ready(function() {
   var $button1 = document.querySelector(".button-1"),
     $container1 = document.querySelector(".container-1"),
@@ -1993,6 +2280,13 @@ function modalOpen6() {
 
 function modalClose6() {
   $(".modals6").hide();
+}
+function modalOpen7() {
+  $(".modals7").show();
+}
+
+function modalClose7() {
+  $(".modals7").hide();
 }
 // function modalCreate(id) {
 //   console.log(id);
