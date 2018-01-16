@@ -1766,7 +1766,7 @@ AmCharts.makeChart("chartdiv6", {
   graphs: [
     {
       accessibleLabel: "[[value]]",
-      balloonText: "[[category]] [[title]]: <b>[[value]] кг</b>",
+      balloonText: "[[category]] [[title]]: <b>[[value]]</b>",
       columnWidth: 0.85,
       fillAlphas: 1,
       id: "AmGraph-1",
@@ -1778,7 +1778,7 @@ AmCharts.makeChart("chartdiv6", {
       valueField: "column-1"
     },
     {
-      balloonText: "[[category]] [[title]]: <b>[[value]] кг</b>",
+      balloonText: "[[category]] [[title]]: <b>[[value]]</b>",
       columnWidth: 0.85,
       fillAlphas: 1,
       id: "AmGraph-2",
@@ -1790,7 +1790,7 @@ AmCharts.makeChart("chartdiv6", {
       valueField: "column-2"
     },
     {
-      balloonText: "[[category]] [[title]]: <b>[[value]] кг</b>",
+      balloonText: "[[category]] [[title]]: <b>[[value]]</b>",
       columnWidth: 0.85,
       fillAlphas: 1,
       fillColors: "#92C992",
@@ -1802,7 +1802,7 @@ AmCharts.makeChart("chartdiv6", {
       valueField: "column-3"
     },
     {
-      balloonText: "[[category]] [[title]]: <b>[[value]] кг</b>",
+      balloonText: "[[category]] [[title]]: <b>[[value]]</b>",
       bulletBorderThickness: 3,
       color: "#000000",
       columnWidth: 0.85,
@@ -1820,7 +1820,7 @@ AmCharts.makeChart("chartdiv6", {
       valueField: "column-4"
     },
     {
-      balloonText: "[[category]] [[title]]: <b>[[value]] кг</b>",
+      balloonText: "[[category]] [[title]]: <b>[[value]]</b>",
       columnWidth: 0.85,
       fillAlphas: 1,
       fillColors: "#D290E7",
@@ -1832,7 +1832,7 @@ AmCharts.makeChart("chartdiv6", {
       valueField: "column-5"
     },
     {
-      balloonText: "[[category]] [[title]]: <b>[[value]] кг</b>",
+      balloonText: "[[category]] [[title]]: <b>[[value]]</b>",
       columnWidth: 0.85,
       fillAlphas: 1,
       fillColors: "#FFFF64",
@@ -1928,7 +1928,7 @@ AmCharts.makeChart("chartdiv7", {
   graphs: [
     {
       accessibleLabel: "[[value]]",
-      balloonText: "[[category]] [[title]]: <b>[[value]] тонн</b>",
+      balloonText: "[[category]] [[title]]: <b>[[value]]</b>",
       columnWidth: 0.85,
       fillAlphas: 1,
       id: "AmGraph-1",
@@ -1940,7 +1940,7 @@ AmCharts.makeChart("chartdiv7", {
       valueField: "column-1"
     },
     {
-      balloonText: "[[category]] [[title]]: <b>[[value]] тонн</b>",
+      balloonText: "[[category]] [[title]]: <b>[[value]]</b>",
       bulletHitAreaSize: 2,
       bulletSize: 6,
       columnWidth: 0.85,
@@ -1956,7 +1956,7 @@ AmCharts.makeChart("chartdiv7", {
       valueField: "column-2"
     },
     {
-      balloonText: "[[category]] [[title]]: <b>[[value]] тонн</b>",
+      balloonText: "[[category]] [[title]]: <b>[[value]]</b>",
       columnWidth: 0.85,
       fillAlphas: 1,
       fillColors: "#92C992",
@@ -1968,7 +1968,7 @@ AmCharts.makeChart("chartdiv7", {
       valueField: "column-3"
     },
     {
-      balloonText: "[[category]] [[title]]: <b>[[value]] тонн</b>",
+      balloonText: "[[category]] [[title]]: <b>[[value]]</b>",
       bulletBorderThickness: 3,
       color: "#000000",
       columnWidth: 0.85,
@@ -1986,7 +1986,7 @@ AmCharts.makeChart("chartdiv7", {
       valueField: "column-4"
     },
     {
-      balloonText: "[[category]] [[title]]: <b>[[value]] тонн</b>",
+      balloonText: "[[category]] [[title]]: <b>[[value]]</b>",
       columnWidth: 0.85,
       fillAlphas: 1,
       fillColors: "#D290E7",
@@ -1998,7 +1998,7 @@ AmCharts.makeChart("chartdiv7", {
       valueField: "column-5"
     },
     {
-      balloonText: "[[category]] [[title]]: <b>[[value]] тонн</b>",
+      balloonText: "[[category]] [[title]]: <b>[[value]]</b>",
       columnWidth: 0.85,
       fillAlphas: 1,
       fillColors: "#FFFF64",
@@ -2011,7 +2011,7 @@ AmCharts.makeChart("chartdiv7", {
       valueField: "column-6"
     },
     {
-      balloonText: "[[category]] [[title]]: <b>[[value]] тонн</b>",
+      balloonText: "[[category]] [[title]]: <b>[[value]]</b>",
       columnWidth: 0.85,
       fillAlphas: 1,
       id: "AmGraph-7",
@@ -2021,7 +2021,7 @@ AmCharts.makeChart("chartdiv7", {
       valueField: "column-7"
     },
     {
-      balloonText: "[[category]] [[title]]: <b>[[value]] тонн</b>",
+      balloonText: "[[category]] [[title]]: <b>[[value]]</b>",
       columnWidth: 0.85,
       fillAlphas: 1,
       id: "AmGraph-8",
@@ -2031,7 +2031,7 @@ AmCharts.makeChart("chartdiv7", {
       valueField: "column-8"
     },
     {
-      balloonText: "[[category]] [[title]]: <b>[[value]] тонн</b>",
+      balloonText: "[[category]] [[title]]: <b>[[value]]</b>",
       columnWidth: 0.85,
       fillAlphas: 1,
       id: "AmGraph-9",
@@ -2041,7 +2041,7 @@ AmCharts.makeChart("chartdiv7", {
       valueField: "column-9"
     },
     {
-      balloonText: "[[category]] [[title]]: <b>[[value]] тонн</b>",
+      balloonText: "[[category]] [[title]]: <b>[[value]]</b>",
       columnWidth: 0.85,
       fillAlphas: 1,
       id: "AmGraph-10",
@@ -2051,7 +2051,7 @@ AmCharts.makeChart("chartdiv7", {
       valueField: "column-10"
     },
     {
-      balloonText: "[[category]] [[title]]: <b>[[value]] тонн</b>",
+      balloonText: "[[category]] [[title]]: <b>[[value]]</b>",
       columnWidth: 0.85,
       fillAlphas: 1,
       id: "AmGraph-11",
@@ -2061,7 +2061,7 @@ AmCharts.makeChart("chartdiv7", {
       valueField: "column-11"
     },
     {
-      balloonText: "[[category]] [[title]]: <b>[[value]] тонн</b>",
+      balloonText: "[[category]] [[title]]: <b>[[value]]</b>",
       columnWidth: 0.85,
       fillAlphas: 1,
       id: "AmGraph-12",
@@ -2071,7 +2071,7 @@ AmCharts.makeChart("chartdiv7", {
       valueField: "column-12"
     },
     {
-      balloonText: "[[category]] [[title]]: <b>[[value]] тонн</b>",
+      balloonText: "[[category]] [[title]]: <b>[[value]]</b>",
       columnWidth: 0.85,
       fillAlphas: 1,
       id: "AmGraph-13",
@@ -2081,7 +2081,7 @@ AmCharts.makeChart("chartdiv7", {
       valueField: "column-13"
     },
     {
-      balloonText: "[[category]] [[title]]: <b>[[value]] тонн</b>",
+      balloonText: "[[category]] [[title]]: <b>[[value]]</b>",
       columnWidth: 0.85,
       fillAlphas: 1,
       fillColors: "#008000",
