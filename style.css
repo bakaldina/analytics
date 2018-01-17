@@ -58,6 +58,7 @@ h4 {
   font-size: 20px;
 }
 .header {
+  margin: auto;
   background: url(image/main_img_analitics4.jpg) no-repeat;
   background-position: 12% 15%;
   background-size: cover;
@@ -65,7 +66,7 @@ h4 {
   width: 100%;
   max-width: 1358px;
   height: 415px;
-  margin: auto;
+  margin: 0 auto;
   text-align: center;
 }
 .header__menu {
@@ -765,13 +766,11 @@ div#child {
     margin: 0;
   }
   /* Мэйн моб */
-  .main__container {
-    padding: 0 10px;
-  }
-  .main__container_1,
-  .main__container_2 {
+  .row__container1,
+  .row__container2 {
     display: block;
     width: 100%;
+    max-width: 280px;
   }
   h1 {
     top: 64%;
@@ -780,6 +779,16 @@ div#child {
     margin-right: -50%;
     transform: translate(-50%, -50%);
     font-size: 40px;
+  }
+  .nav {
+    font-size: 14px;
+  }
+  .ui-tabs .ui-tabs-nav .ui-tabs-anchor {
+    padding: 10px 0 !important;
+  }
+  .ui-tabs .ui-tabs-nav {
+    font-size: 14px;
+    padding: 0 !important;
   }
   .amChartsLegend {
     position: relative;

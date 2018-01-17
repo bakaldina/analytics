@@ -83,7 +83,7 @@ h4 {
   width: 100%;
   max-width: 1358px;
   height: 415px;
-  margin: auto;
+  margin: 0 auto;
   text-align: center;
   &__menu {
     position: fixed;
@@ -811,13 +811,11 @@ div#child {
   }
 
   /* Мэйн моб */
-  .main__container {
-    padding: 0 10px;
-    &_1,
-    &_2 {
-      display: block;
-      width: 100%;
-    }
+  .row__container1,
+  .row__container2 {
+    display: block;
+    width: 100%;
+    max-width: 280px;
   }
   h1 {
     top: 64%;
@@ -827,7 +825,19 @@ div#child {
     transform: translate(-50%, -50%);
     font-size: 40px;
   }
-
+  .nav {
+    font-size: 14px;
+  }
+  .ui-tabs .ui-tabs-nav .ui-tabs-anchor {
+    padding: 10px 0 !important;
+  }
+  .ui-tabs .ui-tabs-nav {
+    font-size: 14px;
+    padding: 0 !important;
+  }
+  // .sidebar {
+  //   display: none;
+  // }
   .amChartsLegend {
     position: relative;
     left: -10px !important;
